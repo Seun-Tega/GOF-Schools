@@ -1,0 +1,215 @@
+
+.logo-section{
+    background-color: white;
+}
+      .logo-section2{
+        font-size: 12px;
+      }
+
+      li .nav-border {
+        border:2px solid white ;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        width: 170px; 
+        padding: 13px; 
+        align-items: center;
+        text-align: center;
+        margin: auto;
+      }
+      
+      li .nav-border2 {
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        width: 170px; 
+        padding: 13px; 
+        align-items: center;
+        text-align: center;
+        margin: auto;
+      }
+      ul .explore{
+        background-color: #AF0505;
+        color: white;
+      }
+      li.explore{
+        background-color: #AF0505;
+      }
+      
+      @media (max-width: 768px) {
+        li .nav-border {
+          width: 100%;
+          border: none;
+          padding: 10px;
+        }
+      }
+      
+        .email-border{
+          border-right: 2px solid black;
+          width: 200px;
+          text-align: start;
+          align-items: center;
+        }
+        .email-border2{
+          width: 200px;
+          text-align: start;
+          align-items: center;  
+        }
+        @media(max-width:768px){
+          .email-border{
+          display: none;
+          }
+        }
+        @media(max-width:768px){
+          .email-border2{
+          display: none;
+          }
+        }
+        .nav-section{
+          background-color: #AF0505;
+        }
+        .logo-image{
+         height: 70px;
+        }
+        .danger{
+            background-color: #AF0505;
+            color: white;
+        }
+        .admin{
+  color: #d60000;
+}
+
+.enroll{
+  border: 2px solid #AF0505;
+  background-color: #AF0505;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  
+}
+.ward{
+  background-color: #FFC1C1;
+  border: 2px solid #FFC1C1;
+  padding: 50px;
+  border-radius: 10px;
+ }
+ .ward2{
+  background-color: #500000;
+  border: 2px solid #500000;
+ }
+ .ward3{
+  color: #333333;
+ }
+ .footer-section{
+  background-color: #500000;
+  border-radius: 10px;
+  padding: 30px;
+ }
+ .icon-social{
+  color: white;
+ }
+ .icon-social2{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+ }
+ .icon-social3{
+  font-size: 20px;
+  color: white;
+  background-color: white;
+   padding: 5px;
+   border-radius: 5px;
+ }
+ .quick2{
+  text-decoration: none;
+  color: white;
+ }
+ .icon-social, .icon-social2, .quick2 {
+  font-size: 14px;
+}
+
+.icon-social3 i {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.icon-social3:hover i {
+  transform: scale(1.2);
+}
+.second-hero{
+  background-image: url(image/Rectangle\ 338\ \(6\).png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+  width: 100%;
+  padding: 5rem;
+  color: white;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+ .section-create{
+  border-bottom: 5px solid #AF0505;
+  padding-bottom: 5px;
+  color: #1A3129;
+}
+.section-create2{
+  color: #333333;
+}
+.section-create3{
+    border-right: 10px solid red;
+}
+div .team-name{
+  position: absolute;
+  border: 2px solid #FFC1C1;
+  background-color: #FFC1C1;
+  width: 200px;
+  border-top-right-radius: 20px;
+  top:270px;
+}
+h5.name{
+  font-size: 14px;
+  font-weight: 600;
+}
+.name2{
+  font-size: 11px;
+}
+
+.ward{
+  background-color: #FFDDDD;
+  border: 2px solid #FFDDDD;
+  padding: 50px;
+  border-radius: 10px;
+ }
+ .ward2{
+      text-decoration: none;
+      color: white;
+      border: 2px solid #500000;
+      padding: 7px;
+      background-color: #500000;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      }
+      .ward2:hover{
+      text-decoration: none;
+      color: white;
+      border: 2px solid black;
+      padding: 7px;
+      background-color: black;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      }
+ .ward3{
+  color: #333333;
+ }
+div .team{
+  background-color:#FFF0F0;
+  border: 2px solid #FFF0F0;
+ }
