@@ -5,7 +5,34 @@
 .logo-section2{
   font-size: 12px;
 }
- 
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.facility-card {
+  opacity: 0;
+  transform: scale(0.8) translateY(40px);
+}
+
+.facility-card.animate {
+  animation: fadeZoomIn 1.5s ease forwards;
+}
+.news-card {
+  opacity: 0;
+  transform: scale(0.8) translateY(40px);
+}
+
+.news-card.animate {
+  animation: fadeZoomIn 1.5s ease forwards;
+}
+
 
 li .nav-border {
   border:2px solid white ;
