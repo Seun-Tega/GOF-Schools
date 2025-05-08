@@ -1,6 +1,4 @@
-body{
-  background-color: red;
-}.logo-section {
+.logo-section {
   background-color: white;
 }
 
@@ -91,7 +89,7 @@ li.explore{
 }
 
 .second-hero {
-  background-image: url(image/Rectangle\ 338\ \(9\).png);
+  background-image: url('../image/Rectangle\ 338\ \(10\).png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -212,7 +210,7 @@ li.explore{
   background-color: white;
 }
 
-.ward {
+#ward {
   background-color: #FFC1C1;
   border: 2px solid #FFC1C1;
   padding: 50px;
@@ -242,3 +240,7 @@ li.explore{
 .ward3 {
   color: #333333;
 }
+div .board{
+background-color: #900C0C;
+}
+

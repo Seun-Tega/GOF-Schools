@@ -5,7 +5,6 @@
 .logo-section2{
   font-size: 12px;
 }
-
 li .nav-border {
   border:2px solid white ;
   border-top: none;
@@ -73,15 +72,11 @@ li.explore{
          height: 70px;
         }
         .danger{
-            background-color: #AF0505;
-            color: white;
+          background-color: #AF0505;
+          color: white;
         }
-        .admin{
-  color: #d60000;
-}
-
-.second-hero{
-  background-image: url(image/Rectangle\ 338\ \(6\).png);
+        .second-hero{
+  background-image: url('../image/Rectangle\ 338\ \(6\).png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -95,33 +90,40 @@ li.explore{
   justify-content: center;
   text-align: start;
 }
-.ward{
+
+div.border-card{
+    border: 2px solid #FFFF;
+    border-radius: 10px;
+    background-color:#FFFF;
+}
+#ward{
   background-color: #FFC1C1;
   border: 2px solid #FFC1C1;
-  padding: 50px;
+   padding: 50px;
   border-radius: 10px;
  }
  .ward2{
-      text-decoration: none;
-      color: white;
-      border: 2px solid #500000;
-      padding: 7px;
-      background-color: #500000;
-      margin-bottom: 100px;
-      border-radius: 10px;
-      }
-      .ward2:hover{
-      text-decoration: none;
-      color: white;
-      border: 2px solid black;
-      padding: 7px;
-      background-color: black;
-      margin-bottom: 100px;
-      border-radius: 10px;
-      }
+    text-decoration: none;
+    color: white;
+    border: 2px solid #500000;
+    padding: 7px;
+    background-color: #500000;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    }
+    .ward2:hover{
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+    padding: 7px;
+    background-color: black;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    }
  .ward3{
   color: #333333;
  }
+
  .footer-section{
   background-color: #500000;
   border-radius: 10px;
@@ -139,8 +141,8 @@ li.explore{
   font-size: 20px;
   color: white;
   background-color: white;
-  padding: 5px;
-   border-radius: 5px;
+            padding: 5px;
+            border-radius: 5px;
  }
  .quick2{
   text-decoration: none;

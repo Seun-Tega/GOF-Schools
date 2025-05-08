@@ -195,7 +195,8 @@ text-decoration: none;
   text-decoration: none;
   }
 .second-hero{
-background-image: url(image/Rectangle\ 338.png);
+/* background-image: url(image/Rectangle\ 338.png); */
+background-image: url('../image/Rectangle\ 338.png');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -230,13 +231,13 @@ border-radius: 10px;
 .gof-text{
 color: #333333;
 }
-.board{
+div .board{
 background-color: #900C0C;
 }
-.ward{
+#ward{
 background-color: #FFC1C1;
 border: 2px solid #FFC1C1;
-padding: 50px;
+padding: 70px;
 border-radius: 10px;
 }
 .ward2{

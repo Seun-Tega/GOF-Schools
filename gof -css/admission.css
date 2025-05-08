@@ -75,7 +75,7 @@ li.explore{
           color: white;
         }
         .second-hero{
-            background-image: url(image/Rectangle\ 338\ \(6\).png);
+            background-image: url('../image/Rectangle\ 338\ \(6\).png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -119,7 +119,7 @@ li.explore{
             }
 
 
-            .ward{
+            #ward{
               background-color: #FFC1C1;
               border: 2px solid #FFC1C1;
               padding: 50px;
