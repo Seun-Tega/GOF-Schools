@@ -244,3 +244,49 @@ div .board{
 background-color: #900C0C;
 }
 
+
+
+.swiper-nav {
+  background-color: #db0c0c;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  opacity: 1;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #db0c0c !important;
+}
+
+.swiper-pagination {
+  gap: 4px !important;
+}
+
+/* Reduce button size on smaller screens */
+@media (max-width: 768px) {
+  .swiper-nav {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .swiper-pagination {
+    gap: 3px !important;
+  }
+}
+
+@media(max-width:576px) {
+  .swiper-nav {
+    display: none;
+  }
+}
+

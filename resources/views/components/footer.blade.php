@@ -66,9 +66,10 @@
               <ul class="list-unstyled">
                 <li><a class="quick2 text-white" href="#">Home</a></li>
                 <li><a class="quick2 text-white" href="#">About</a></li>
-                <li><a class="quick2 text-white" href="#">Admission</a></li>
+                <li><a class="quick2 text-white" href="{{ route('application') }}">Admission</a></li>
                 <li><a class="quick2 text-white" href="#">Academics</a></li>
                 <li><a class="quick2 text-white" href="#">Alumni</a></li>
+                <li><a class="quick2 text-white" href="{{ route('facilities')}}">Our Facilities</a></li>
               </ul>
             </div>
           </div>

@@ -1,12 +1,30 @@
-@extends('layouts.main')
-<x-title title="Home"/>
+<!DOCTYPE html>
+<html lang="en">
 
-@section('styles')
-<link rel="stylesheet" href="{{asset('assets/gof-css/index.css')}}" />
-@endsection
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" href="{{ asset('assets/image/image (6).png') }}" />
+  <link rel="stylesheet" href="{{asset('assets/gof-css/index.css')}}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
 
-@section('content')
+<body style="background-color: #fff0f0">
+
+  <x-header />
+  <x-nav-bar />
+  
+
 
   <section class="position-relative overflow-hidden">
     <!-- Carousel -->
@@ -386,30 +404,16 @@
   </section>
 
   <x-testimonial-card/>
+   <x-enroll-btn />
 
-  <section>
-    <div id="ward" class="container py-5">
-      <div class="row g-3 align-items-center">
-        <!-- Text Content -->
-        <div class="col-12 col-md-8">
-          <h4 class="ward3">ENROLL YOUR WARDS WITH US</h4>
-          <p>
-            We are always on the lookout for talented individuals who are
-            enthusiastic about making a difference. Explore our career
-            opportunities and join us in our mission to help people achieve
-            their health and wellness goals.
-          </p>
-        </div>
+  <x-footer />
 
-        <!-- Button -->
-        <div class="col-12 col-md-4 text-md-end text-center">
-          <a class="ward2" href="Admission.html">Apply Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-@endsection
 
-@section('scripts')
   <script src="{{ asset('assets/scripts/index.js') }}"></script>
-@endsection
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

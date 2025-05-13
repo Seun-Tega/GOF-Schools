@@ -10,87 +10,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 
 <body style="height: 200vh; background-color: #FFF0F0;">
-  <section class="container-fluid py-1 logo-section">
-    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+  <x-header />
 
-      <!-- Logo -->
-      <div class="flex-shrink-0">
-        <img src="{{ asset('assets/image/image (6).png') }}" alt="Logo" width="70">
-      </div>
-
-      <!-- Email -->
-      <div class="logo-section2">
-        <p class="fw-bold mb-1 mb-sm-0">Email</p>
-        <address class="mb-0 ">info@gofschools.net</address>
-      </div>
-
-      <!-- Phone -->
-      <div class="logo-section2">
-        <p class="fw-bold mb-1 mb-sm-0">Phone</p>
-        <p class="mb-0">+234 803606 0560</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="w-100">
-    <nav class="navbar navbar-expand-xl navbar-light nav-section w-100">
-      <div class="container-fluid">
-        <!-- Toggler for small screens -->
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Nav Links -->
-        <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNavDropdown">
-          <ul class="navbar-nav w-100 d-flex justify-content-between">
-            <li class="nav-item">
-              <a class="nav-link active text-light nav-border2 text-center" href="index.html">HOME</a>
-            </li>
-
-            <!-- EXPLORE Dropdown -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle nav-border text-light" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                EXPLORE
-              </a>
-              <ul class="dropdown-menu text-white">
-                <li><a class="dropdown-item explore" href="who we are.html">Who we are</a></li>
-                <li><a class="dropdown-item explore" href="propertior and propertress.html">Proprietor and Proprietress
-                    Message</a></li>
-                <li><a class="dropdown-item explore" href="https://elearning.gofschools.net/"
-                    target="_blank">E-learning/CBT Platform </a></li>
-                <li><a class="dropdown-item explore" href="meet our team.html">GOF Team</a></li>
-              </ul>
-            </li>
-
-            <!-- ACADEMICS Dropdown -->
-            <li class="nav-item dropdown text-white">
-              <a class="nav-link dropdown-toggle nav-border text-light nav-border2 text-center" href="#" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                ACADEMICS
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item explore" href="cirrculum overview.html">Curriculum Overview</a></li>
-                <li><a class="dropdown-item explore " href="extra cirriculum.html">Extra Curricular</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item"><a class="nav-link nav-border text-light" href="News&Event.html">NEWS & EVENTS</a></li>
-            <li class="nav-item"><a class="nav-link nav-border text-light" href="Gallery.html">GALLERY</a></li>
-            <li class="nav-item"><a class="nav-link nav-border text-light" href="#">ALUMNI</a></li>
-            <li class="nav-item"><a class="nav-link nav-border text-light" href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </section>
+  <x-nav-bar />
 
 
   <section class="second-hero py-5">
@@ -107,7 +35,7 @@
       <div class="row align-items-center">
         <!-- Image Column -->
         <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
-          <img src="{{ asset('assets/') }}image/{{ asset('assets/') }}image (10).png" alt="GOF Image" class="img-fluid w-100 section-create3"
+          <img src="{{ asset('assets/image/image (10).png') }}" alt="GOF Image" class="img-fluid w-100 section-create3"
             style="max-width: 500px;">
         </div>
 
@@ -144,7 +72,7 @@
             innovation, inclusivity, and lifelong learning.</p>
         </div>
         <div class="col-12 col-md-6 text-center">
-          <img src="{{ asset('assets/') }}image/Group 32.png" alt="Purpose Illustration" class="img-fluid">
+          <img src="{{ asset('assets/image/Group 32.png') }}" alt="Purpose Illustration" class="img-fluid">
         </div>
       </div>
     </div>
@@ -164,7 +92,7 @@
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="card h-100 bg-white border-white">
           <div class="card-body">
-            <img src="{{ asset('assets/') }}image/Icon Container (2).png" alt="IGCSE" class="img-fluid mb-3">
+            <img src="{{ asset('assets/image/Icon Container (2).png') }}" alt="IGCSE" class="img-fluid mb-3">
             <h5 class="card-title">Excellence </h5>
             <p class="card-text">
               Striving for the highest standards in education and personal growth.
@@ -176,7 +104,7 @@
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="card h-100 bg-white border-white">
           <div class="card-body bg-white">
-            <img src="{{ asset('assets/') }}image/Icon Container (1).png" alt="IB" class="img-fluid mb-3">
+            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="IB" class="img-fluid mb-3">
             <h5 class="card-title">Integrity</h5>
             <p class="card-text">
               Encouraging honesty, respect, and ethical behavior.
@@ -188,7 +116,7 @@
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="card h-100 bg-white border-white">
           <div class="card-body bg-white ">
-            <img src="{{ asset('assets/') }}image/Icon Container (1).png" alt="WAEC/NECO" class="img-fluid mb-3">
+            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="WAEC/NECO" class="img-fluid mb-3">
             <h5 class="card-title">Innovation</h5>
             <p class="card-text">
               Embracing creativity and new ideas in learning.</p>
@@ -201,7 +129,7 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card h-100 bg-white border-white">
             <div class="card-body">
-              <img src="{{ asset('assets/') }}image/Icon Container (4).png" alt="IGCSE" class="img-fluid mb-3">
+              <img src="{{ asset('assets/image/Icon Container (4).png') }}" alt="IGCSE" class="img-fluid mb-3">
               <h5 class="card-title">Collaboration </h5>
               <p class="card-text">
                 Working together to create a supportive learning environment.
@@ -213,7 +141,7 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card h-100 bg-white border-white">
             <div class="card-body">
-              <img src="{{ asset('assets/') }}image/Icon Container.png" alt="IB" class="img-fluid mb-3">
+              <img src="{{ asset('assets/image/Icon Container.png') }}" alt="IB" class="img-fluid mb-3">
               <h5 class="card-title">Diversity & Inclusion</h5>
               <p class="card-text">
                 Welcoming students from all backgrounds & celebrating individuality.
@@ -237,143 +165,11 @@
     </div>
   </section>
 
-  <section class="container my-5">
-    <div class="row g-4">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <img src="{{ asset('assets/') }}image/Text.png" class="img-fluid my-4" alt="...">
-            <p class="card-text">
-              I can't thank Nutritionist enough for their personalized nutrition coaching. It has completely transformed
-              my approach to food and helped me shed those extra pounds.
-            </p>
-          </div>
-          <div class="card-footer board d-flex align-items-center gap-2">
-            <img src="{{ asset('assets/') }}image/Image (14).png" alt="">
-            <small class="text-muted">Jennifer Anderson</small>
-          </div>
-        </div>
-      </div>
+  <x-testimonial-card />
+   <x-enroll-btn/>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <img src="{{ asset('assets/') }}image/Text.png" class="img-fluid my-4" alt="...">
-            <p class="card-text">
-              Nutritionist has been a game-changer for me. The expert guidance and support I received from their team
-              made my weight loss journey so much easier. Thank you!
-            </p>
-          </div>
-          <div class="card-footer board d-flex align-items-center gap-2">
-            <img src="{{ asset('assets/') }}image/Image (15).png" alt="">
-            <small class="text-muted">Robert Johnson</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <img src="{{ asset('assets/') }}image/Text.png" class="img-fluid my-4" alt="...">
-            <p class="card-text">
-              I had struggled with my weight for years until I found Nutritionist. Their personalized approach and
-              tailored nutrition plan made all the difference. I've never felt better!
-            </p>
-          </div>
-          <div class="card-footer board d-flex align-items-center gap-2">
-            <img src="{{ asset('assets/') }}image/Image (16).png" alt="">
-            <small class="text-muted">Emily Davis</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <img class="w-100 h-auto pb-5" src="{{ asset('assets/') }}image/Buttons Container.png" alt="Responsive Image">
-  </section>
-
-
-  <section>
-    <div id="ward" class="container py-5 pb-5">
-      <div class="row g-3 align-items-center">
-        <!-- Text Content -->
-        <div class="col-12 col-md-8">
-          <h4 class="ward3">ENROLL YOUR WARDS WITH US</h4>
-          <p>
-            We are always on the lookout for talented individuals who are enthusiastic about making a difference.
-            Explore our career opportunities and join us in our mission to help people achieve their health and wellness
-            goals.
-          </p>
-        </div>
-
-        <!-- Button -->
-        <div class="col-12 col-md-4 text-md-end text-center">
-          <a class="ward2" href="Admission.html">Apply Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="footer-section my-5 py-2 px-4 px-md-5 text-white justify-content-between">
-    <footer>
-      <div class="container">
-        <img src="{{ asset('assets/') }}image/{{ asset('assets/') }}image (6).png" alt="" class="img-fluid mb-3 d-block mx-auto pb-3">
-        <div class="row gy-4 text-center text-md-start d-flex justify-content-between flex-wrap px-3 px-md-4">
-          <!-- Contact Section -->
-          <div class="col-12 col-md-6 col-lg-2">
-            <p class="icon-social"><i class="bi bi-envelope-fill"></i> info@gofschools.net</p>
-            <p class="icon-social"><i class="bi bi-telephone-fill"></i> +234 803 606 0560</p>
-            <p class="icon-social"><i class="bi bi-geo-alt-fill"></i> Onward Estate, Off Gbongan-Ibadan Expressway,
-              Osogbo, Osun State, Nigeria</p>
-            <p class="icon-social2">Social profile:</p>
-            <div class="d-flex justify-content-center justify-content-md-start">
-              <a class="icon-social3 me-3 text-dark" href="https://www.facebook.com/share/17jfghH33v/"
-                target="_blank"><i class="bi bi-facebook"></i></a>
-              <a class="icon-social3 me-3 text-dark" href="#"><i class="bi bi-twitter"></i></a>
-              <a class="icon-social3 text-dark" href="#"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <!-- Quick Links -->
-          <div class="col-12 col-md-6 col-lg-2">
-            <h5 class="quick2">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a class="quick2 text-white" href="index.html">Home</a></li>
-              <li><a class="quick2 text-white" href="who we are.html">About</a></li>
-              <li><a class="quick2 text-white" href="Admission.html">Admission</a></li>
-              <li><a class="quick2 text-white" href="#">Academics</a></li>
-              <li><a class="quick2 text-white" href="#">Alumni</a></li>
-            </ul>
-          </div>
-
-          <!-- Branches -->
-          <div class="col-12 col-md-6 col-lg-2">
-            <h5 class="quick2">Other Branches</h5>
-            <p>Gof International (Côte d'Ivoire)</p>
-            <p>Gof International (Nigeria)</p>
-          </div>
-
-          <!-- Duplicate Links (if needed) -->
-          <div class="col-12 col-md-6 col-lg-2">
-            <h5 class="quick2">Links</h5>
-            <ul class="list-unstyled">
-              <li><a class="quick2 text-white" href="#">Home</a></li>
-              <li><a class="quick2 text-white" href="#">About</a></li>
-              <li><a class="quick2 text-white" href="#">Admission</a></li>
-              <li><a class="quick2 text-white" href="#">Academics</a></li>
-              <li><a class="quick2 text-white" href="#">Alumni</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <p class="foot text-center text-white py-3 mb-0">
-        © 2025 | All rights reserved | GOF International Schools.
-      </p>
-    </footer>
-  </section>
-
+  <x-footer />
+  <script src="{{ asset('assets/scripts/index.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
   </script>

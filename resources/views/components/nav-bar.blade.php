@@ -23,7 +23,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link active text-light nav-border2 text-center"
-                  href="index.html"
+                  href="{{ route('index') }}"
                   >HOME</a
                 >
               </li>
@@ -48,7 +48,7 @@
                   <li>
                     <a
                       class="dropdown-item explore"
-                      href="propertior and propertress.html"
+                      href="{{ route('message') }}"
                       >Proprietor and Proprietress Message</a
                     >
                   </li>
@@ -61,7 +61,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item explore" href="meet our team.html"
+                    <a class="dropdown-item explore" href="{{ route('team') }}"
                       >GOF Team</a
                     >
                   </li>
@@ -83,14 +83,14 @@
                   <li>
                     <a
                       class="dropdown-item explore"
-                      href="cirrculum overview.html"
+                      href="{{ route('curriculum') }}"
                       >Curriculum Overview</a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item explore"
-                      href="extra cirriculum.html"
+                      href="{{ route('extra.curriculum') }}"
                       >Extra Curricular</a
                     >
                   </li>
@@ -98,12 +98,12 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link nav-border text-light" href="News&Event.html"
+                <a class="nav-link nav-border text-light" href="{{ route('news.events') }}"
                   >NEWS & EVENTS</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-border text-light" href="Gallery.html"
+                <a class="nav-link nav-border text-light" href="{{ route('gallery') }}"
                   >GALLERY</a
                 >
               </li>
@@ -111,7 +111,7 @@
                 <a class="nav-link nav-border text-light" href="#">ALUMNI</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-border text-light" href="contact.html"
+                <a class="nav-link nav-border text-light" href="{{ route('contact') }}"
                   >CONTACT</a
                 >
               </li>
