@@ -14,7 +14,7 @@
 
         <!-- Button -->
         <div class="col-12 col-md-4 text-md-end text-center">
-          <a class="ward2" href="Admission.html">Apply Now</a>
+          <a class="ward2" href="{{ route("application") }}">Apply Now</a>
         </div>
       </div>
     </div>
