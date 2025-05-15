@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('news_events', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->enum('type', ['news', 'events'])->default('news');
+            $table->enum('location', ['nigeria', 'other'] )->index();
+            $table->date('event_date')->nullable()->index();
+            $table->time('event_time')->nullable();
+            $table->string('event_venue')->nullable();
+            $table->longText('news_content');
+            $table->string('photo');
             $table->timestamps();
         });
     }

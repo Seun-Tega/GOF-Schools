@@ -11,5 +11,6 @@
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="{{ asset('assets/admin/css/style.css') }}">
+  {!! ToastMagic::styles() !!}
   <!-- endinject -->
   {{-- <link rel="shortcut icon" href="http://www.urbanui.com/" /> --}}

@@ -60,7 +60,7 @@
               blind texts.
             </p>
             <div class="mt-auto d-flex align-items-center">
-              <a href="#" class="btn btn-dark enroll me-3 p-1">
+              <a href="{{ route('news') }}" class="btn btn-dark enroll me-3 p-1">
                 Read Now <span><i class="bi bi-arrow-right"></i></span>
               </a>
               <div class="d-flex align-items-center">

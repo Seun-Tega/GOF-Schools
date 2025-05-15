@@ -55,20 +55,22 @@ Route::get('/facilities', function () {
     return view('pages.facilities');
 })->name('facilities');
 
+Route::get('/news', function () {
+    return view('pages.news');
+})->name('news');
 
 
-
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::prefix('/admin')->middleware(['auth', 'verified'])->group(function () {
 
     Route::get('/dashboard', function () {
         //  return view('dashboard');
         return view('admin.dashboard');
     })->name('dashboard');
 
-    Route::get('/admin/students', [StudentController::class, 'getStudents'])->name('admin.students');
-    Route::get('/admin/{student}/student/', [StudentController::class, 'getStudentDetails'])->name('student.details');
-    Route::get('/admin/news', [NewsEventController::class, 'index'])->name('admin.news');
-
+    Route::get('/students', [StudentController::class, 'getStudents'])->name('admin.students');
+    Route::get('/{student}/student/', [StudentController::class, 'getStudentDetails'])->name('student.details');
+    Route::get('/news', [NewsEventController::class, 'index'])->name('admin.news');
+    Route::post('/news/store', [NewsEventController::class, 'store'])->name('news.store');
 });
 
 Route::post('/student/application', [StudentController::class, 'store'])->name('application.store');
