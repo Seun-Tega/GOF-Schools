@@ -11,12 +11,13 @@
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </head>
 
 <body style="background-color: #FFF0F0; height: 200vh;">
 
-  
+
   <x-header />
   <x-nav-bar />
 
@@ -37,191 +38,46 @@
 
       <!-- Buttons -->
       <div class="col-12 col-md d-flex flex-wrap justify-content-md-end gap-2">
-        <a class=" button5" href="#">All</a>
-        <a class=" button6" href="#">Nigeria</a>
-        <a class=" button7" href="#">Côte d'Ivoire</a>
+        <a class=" button5 filter filtered" href="#" data-type="all">All</a>
+        <a class=" button6 filter" href="#" data-type='nigeria'>Nigeria</a>
+        <a class=" button7 filter" href="#" data-type="cote">Côte d'Ivoire</a>
       </div>
     </div>
   </section>
 
 
   <section class="container my-4">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- Card 1 -->
-      <div class="col" data-aos="fade-up">
-        <div class="card h-100">
-          <img src="{{ asset('assets/image/Group 19 (1).png') }}" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Announcement!!! Entrance Examination for Technician Programmes</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-            </p>
-            <div class="mt-auto d-flex align-items-center">
-              <a href="{{ route('news') }}" class="btn btn-dark enroll me-3 p-1">
-                Read Now <span><i class="bi bi-arrow-right"></i></span>
-              </a>
-              <div class="d-flex align-items-center">
-                <span class="me-3 admin">Admin</span>
-                <i class="bi bi-eye me-1"></i>
-                <span>8</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 card-wrapper">
 
-      <!-- Card 2 -->
-      <div class="col" data-aos="fade-up">
-        <div class="card h-100">
-          <img src="{{ asset('assets/image/Group 19 (2).png') }}" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Announcement!!! Entrance Examination for Technician Programmes</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-            </p>
-            <div class="mt-auto d-flex align-items-center">
-              <a href="#" class="btn btn-dark enroll me-3 p-1">
-                Read Now <span><i class="bi bi-arrow-right"></i></span>
-              </a>
-              <div class="d-flex align-items-center">
-                <span class="me-3 admin">Admin</span>
-                <i class="bi bi-eye me-1"></i>
-                <span>8</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="col" data-aos="fade-up">
-        <div class="card h-100">
-          <img src="{{ asset('assets/image/Group 19 (5).png') }}" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Announcement!!! Entrance Examination for Technician Programmes</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-            </p>
-            <div class="mt-auto d-flex align-items-center">
-              <a href="#" class="btn btn-dark enroll me-3 p-1">
-                Read Now <span><i class="bi bi-arrow-right"></i></span>
-              </a>
-              <div class="d-flex align-items-center">
-                <span class="me-3 admin">Admin</span>
-                <i class="bi bi-eye me-1"></i>
-                <span>8</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
-  <section class="container my-4">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- Card 1 -->
-      <div class="col" data-aos="fade-up">
-        <div class="card h-100">
-          <img src="{{ asset('assets/image/Group 19 (1).png') }}" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Announcement!!! Entrance Examination for Technician Programmes</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-            </p>
-            <div class="mt-auto d-flex align-items-center">
-              <a href="#" class="btn btn-dark enroll me-3 p-1">
-                Read Now <span><i class="bi bi-arrow-right"></i></span>
-              </a>
-              <div class="d-flex align-items-center">
-                <span class="me-3 admin">Admin</span>
-                <i class="bi bi-eye me-1"></i>
-                <span>8</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="col" data-aos="fade-up">
-        <div class="card h-100">
-          <img src="{{ asset('assets/image/Group 19 (2).png') }}" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Announcement!!! Entrance Examination for Technician Programmes</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-            </p>
-            <div class="mt-auto d-flex align-items-center">
-              <a href="#" class="btn btn-dark enroll me-3 p-1">
-                Read Now <span><i class="bi bi-arrow-right"></i></span>
-              </a>
-              <div class="d-flex align-items-center">
-                <span class="me-3 admin">Admin</span>
-                <i class="bi bi-eye me-1"></i>
-                <span>8</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col " data-aos="fade-up">
-        <div class="card h-100">
-          <img src="{{ asset('assets/image/Group 19 (5).png') }}" class="card-img-top" alt="...">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Announcement!!! Entrance Examination for Technician Programmes</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.
-            </p>
-            <div class="mt-auto d-flex align-items-center">
-              <a href="#" class="btn btn-dark enroll me-3 p-1">
-                Read Now <span><i class="bi bi-arrow-right"></i></span>
-              </a>
-              <div class="d-flex align-items-center">
-                <span class="me-3 admin">Admin</span>
-                <i class="bi bi-eye me-1"></i>
-                <span>8</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <section>
     <div class="container d-flex justify-content-between align-items-center py-4 flex-wrap">
-      <p class="mb-2 mb-md-0">1/5</p>
+      <p class="mb-2 mb-md-0 pagination-info">1/5</p>
 
-      <div class="d-flex gap-2 ms-auto">
+
+      {{-- <div class="d-flex gap-2 ms-auto">
         <p class=" button-class"> <span> <i class="bi bi-arrow-left"></i></span>Prev</p>
         <p class=" button-class2">Next <span><i class="bi bi-arrow-right"></i></span></p>
       </div>
+    </div> --}}
+
+    <div class="d-flex gap-2 ms-auto">
+      <button class="btn btn-outline-dark button-class">
+        <i class="bi bi-arrow-left me-1"></i> Prev
+      </button>
+      <button class="btn btn-dark button-class2">
+        Next <i class="bi bi-arrow-right ms-1"></i>
+      </button>
     </div>
+
   </section>
 
-   <x-enroll-btn />
+  <x-enroll-btn />
 
   <x-footer />
 
@@ -239,6 +95,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
   </script>
+  <script src="{{ asset('assets/scripts/news.js') }}"></script>
 
 </body>
 

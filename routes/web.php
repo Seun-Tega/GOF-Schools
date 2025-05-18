@@ -3,6 +3,7 @@
 use App\Http\Controllers\NewsEventController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,9 +30,6 @@ Route::get('/extra-curriculum', function () {
     return view('pages.extra-curriculum');
 })->name('extra.curriculum');
 
-Route::get('/news-and-events', function () {
-    return view('pages.news-and-events');
-})->name('news.events');
 
 
 Route::get('/gallery', function () {
@@ -55,23 +53,30 @@ Route::get('/facilities', function () {
     return view('pages.facilities');
 })->name('facilities');
 
-Route::get('/news', function () {
-    return view('pages.news');
-})->name('news');
+Route::get('/newsEvents', function () {
+    return view('pages.news-and-events');
+})->name('news.events');
+
+Route::get('/news/all', [NewsEventController::class, 'getAllNews']);
+Route::get('/news/{newsEvent:slug}',[NewsEventController::class, 'getFullNews'])->name('news');
+Route::get('/news/filter/{currentType}', [NewsEventController::class, 'filter']);
 
 
 Route::prefix('/admin')->middleware(['auth', 'verified'])->group(function () {
 
-    Route::get('/dashboard', function () {
-        //  return view('dashboard');
-        return view('admin.dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [UserController::class, 'index'])->name('dashboard');
 
     Route::get('/students', [StudentController::class, 'getStudents'])->name('admin.students');
     Route::get('/{student}/student/', [StudentController::class, 'getStudentDetails'])->name('student.details');
     Route::get('/news', [NewsEventController::class, 'index'])->name('admin.news');
     Route::post('/news/store', [NewsEventController::class, 'store'])->name('news.store');
+    Route::get('/news/{newsEvent}/edit', [NewsEventController::class, 'edit'])->name('news.edit');
+    Route::put('/news/{newsEvent}', [NewsEventController::class, 'update'])->name('news.update');
+    Route::delete('/news/{newsEvent}', [NewsEventController::class, 'destroy'])->name('news.destroy');
+
 });
+
+
 
 Route::post('/student/application', [StudentController::class, 'store'])->name('application.store');
 

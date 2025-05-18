@@ -3,7 +3,7 @@
           <li class="nav-item nav-profile">
             <div class="nav-link">
               <div class="profile-image">
-                <img src="{{ asset('assets/admin/images/faces/face5.jpg') }}" alt="image"/>
+                <img src="{{ asset('assets/image/image (6).png') }}" alt="image"/>
               </div>
               <div class="profile-name">
                 <p class="name">

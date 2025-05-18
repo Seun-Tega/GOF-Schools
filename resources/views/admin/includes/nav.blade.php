@@ -49,7 +49,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          {{-- <li class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
               <i class="fas fa-bell mx-0"></i>
               <span class="count">16</span>
@@ -158,16 +158,16 @@
                 </div>
               </a>
             </div>
-          </li>
+          </li> --}}
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="{{ asset('assets/admin/images/faces/face5.jpg') }}" alt="profile"/>
+              {{-- <img src="{{ asset('assets/admin/images/faces/face5.jpg') }}" alt="profile"/> --}}
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
+              {{-- <a class="dropdown-item">
                 <i class="fas fa-cog text-primary"></i>
                 Settings
-              </a>
+              </a> --}}
               <div class="dropdown-divider"></div>
               <form method="POST" action="{{ route('logout') }}">
                 @csrf
