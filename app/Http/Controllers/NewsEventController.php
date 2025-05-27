@@ -20,6 +20,8 @@ class NewsEventController extends Controller
         return view('admin.news.index', compact('newsEvents'));
     }
 
+
+
     public function getAllNews()
     {
         $newsEvents = NewsEvent::inRandomOrder()->paginate(6);
@@ -99,7 +101,10 @@ class NewsEventController extends Controller
 
         $fileName = md5($uploadedFile->getClientOriginalName()) . $rad . '.' . $uploadedFile->getClientOriginalExtension();
 
-        $filePath =  $uploadedFile->storeAs('uploads', $fileName, 'public');
+      //  $filePath =  $uploadedFile->storeAs('uploads', $fileName, 'public');
+
+     $filePath = $uploadedFile->move(public_path('uploads'), $fileName);
+
 
         if (!$filePath) {
             Log::error(message: "File upload failed: Unable to store file '{$fileName}'");

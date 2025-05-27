@@ -21,7 +21,7 @@
   <section class="container my-5">
     <div class="row justify-content-center">
       <div class="col-12 text-start bg-light p-4 rounded shadow-sm">
-        <h1 class="mb-4 text-dark application">Application Submitted Successfully</h1>
+        <h6 class="mb-4 text-dark application">Application Submitted Successfully</h6>
         <p class="application2">
           Thank you for completing the admission form.<br>
           We have received your application, and our admissions team will review it shortly.
@@ -32,7 +32,7 @@
         <ul class="application2">
           <li>You may be invited for an entrance exam or interview.</li>
           <li>Please ensure your phone and email are reachable.</li>
-          <li>For any inquiries, contact us at: [School Phone/Email]</li>
+          <li>For any inquiries, contact us at: [+234 808 155 5652/gofschooledu@gmail.com]</li>
         </ul>
 
         <div class="text-center application4">

@@ -13,17 +13,18 @@ class NewsEvent extends Model
     use HasSlug;
     protected $guarded = [];
 
-    
+
     protected $casts = [
         'event_date' => 'datetime',
         'event_time' => 'datetime',
     ];
 
-     public function getSlugOptions() : SlugOptions
+    public function getSlugOptions(): SlugOptions
     {
         return SlugOptions::create()
             ->generateSlugsFrom('title')
             ->saveSlugsTo('slug');
     }
+
 
 }

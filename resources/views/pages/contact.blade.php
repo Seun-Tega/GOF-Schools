@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {!! ToastMagic::styles() !!}
 </head>
 
 <body style="height: 200vh; background-color: #FFF0F0;">
@@ -80,19 +81,56 @@
         <!-- Form Column -->
         <!-- Form Column -->
         <div class="col-12 col-md-6">
-          <form class="FORM1">
+          <form action="{{ route('contact.submit') }}"  method="POST" class="FORM1">
+            @csrf
             <div class="mb-3 d-flex flex-column flex-md-row gap-2">
-              <input type="text" id="form2" class="form-control" placeholder="First Name">
-              <input type="text" id="form2" class="form-control" placeholder="Last Name">
+              <input type="text" id="form2" class="form-control" name="firstname" value="{{ old('firstname') }}" placeholder="First Name">
+              @error('firstname')
+              <span class="text-danger">
+                {{ $message }}
+              </span>
+                
+              @enderror
+              <input type="text" id="form2" class="form-control" name="lastname" value="{{ old('lastname') }}" placeholder="Last Name">
+                @error('lastname')
+              <span class="text-danger">
+                {{ $message }}
+              </span>
+                
+              @enderror
             </div>
             <div class="mb-3 d-flex flex-column flex-md-row gap-2">
-              <input type="email" id="form2" class="form-control" placeholder="Email">
-              <input type="tel" id="form2" class="form-control form5" placeholder="Phone Number">
+              <input type="email" id="form2" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email">
+                @error('email')
+              <span class="text-danger">
+                {{ $message }}
+              </span>
+                
+              @enderror
+              <input type="tel" id="form2" class="form-control form5" name="phone" value="{{ old('phone') }}" placeholder="Phone Number">
+                @error('phone')
+              <span class="text-danger">
+                {{ $message }}
+              </span>
+                
+              @enderror
             </div>
             <div class="mb-3">
-              <input type="text" id="form2" class="form-control mb-2" placeholder="Subject">
-              <textarea class="form-control" id="form2" placeholder="Your Message Here" rows="4"></textarea>
-            </div>
+              <input type="text" id="form2" class="form-control mb-2" name="subject"  value="{{ old('subject') }}" placeholder="Subject">
+                @error('subject')
+              <span class="text-danger">
+                {{ $message }}
+              </span>
+                
+              @enderror
+              <textarea class="form-control" id="form2" name="message" placeholder="Your Message Here" rows="4">{{ old('message') }}</textarea>
+                @error('message')
+              <span class="text-danger">
+                {{ $message }}
+              </span>
+                
+              @enderror
+            </div>  
             <div class="text-center">
               <button type="submit" class="submit">Submit</button>
             </div>
@@ -116,7 +154,7 @@
 
 
 
-
+ {!! ToastMagic::scripts() !!}
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
   </script>

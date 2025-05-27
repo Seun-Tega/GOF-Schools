@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showCard(newsEvents, currentPage, lastPage) {
+
+        console.log(newsEvents);
         let content = "";
 
         newsEvents.forEach((newsEvent) => {
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             content += `
               <div class="col" data-aos="fade-up">
                 <div class="card h-100">
-                  <img src="storage/uploads/${newsEvent.photo}" class="card-img-top" alt="${newsEvent.title}">
+                  <img src="uploads/${newsEvent.photo}" class="card-img-top" alt="${newsEvent.title}">
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${newsEvent.title}</h5>
                     <p class="card-text">${newsEvent.news_content}</p>

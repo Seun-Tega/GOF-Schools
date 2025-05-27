@@ -1,14 +1,37 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\IndexController;
 use App\Http\Controllers\NewsEventController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+
+
+Route::get('/migration', function () {
+    // Artisan::call('migrate:fresh', [
+    //     '--force' => true,
+    // ]);
+
+    // Artisan::call('db:seed', [
+    //     '--force' => true,
+    // ]);
+    //  Artisan::call('storage:link', [
+    //     '--force' => true,
+    // ]);
+      Artisan::call('optimize:clear', [
+        '--force' => true,
+    ]);
+
+
+    return 'Database migrated and seeded successfully.';
+});
+
+
+Route::get('/', [IndexController::class, 'index'])->name('index');
 
 Route::get('/about', function () {
     return view('pages.who-we-are');
@@ -79,6 +102,7 @@ Route::prefix('/admin')->middleware(['auth', 'verified'])->group(function () {
 
 
 Route::post('/student/application', [StudentController::class, 'store'])->name('application.store');
+Route::post('/contact/submit', [ContactController::class, 'store'])->name('contact.submit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

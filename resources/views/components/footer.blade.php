@@ -45,10 +45,10 @@
             <div class="col-12 col-md-6 col-lg-2">
               <h5 class="quick2">Quick Links</h5>
               <ul class="list-unstyled">
-                <li><a class="quick2 text-white" href="#">Home</a></li>
-                <li><a class="quick2 text-white" href="#">About</a></li>
-                <li><a class="quick2 text-white" href="#">Admission</a></li>
-                <li><a class="quick2 text-white" href="#">Academics</a></li>
+                <li><a class="quick2 text-white" href="{{ route('index') }}">Home</a></li>
+                <li><a class="quick2 text-white" href="{{ route('about') }}">About</a></li>
+                <li><a class="quick2 text-white" href="{{ route('application') }}">Admission</a></li>
+                <li><a class="quick2 text-white" href="{{ route('curriculum') }}">Academics</a></li>
                 <li><a class="quick2 text-white" href="#">Alumni</a></li>
               </ul>
             </div>
@@ -64,10 +64,10 @@
             <div class="col-12 col-md-6 col-lg-2">
               <h5 class="quick2">Links</h5>
               <ul class="list-unstyled">
-                <li><a class="quick2 text-white" href="#">Home</a></li>
-                <li><a class="quick2 text-white" href="#">About</a></li>
+               <li><a class="quick2 text-white" href="{{ route('index') }}">Home</a></li>
+                <li><a class="quick2 text-white" href="{{ route('about') }}">About</a></li>
                 <li><a class="quick2 text-white" href="{{ route('application') }}">Admission</a></li>
-                <li><a class="quick2 text-white" href="#">Academics</a></li>
+                <li><a class="quick2 text-white" href="{{ route('curriculum') }}">Academics</a></li>
                 <li><a class="quick2 text-white" href="#">Alumni</a></li>
                 <li><a class="quick2 text-white" href="{{ route('facilities')}}">Our Facilities</a></li>
               </ul>

@@ -164,7 +164,7 @@ News and Events
                                 <td>{{ $newsEvent->event_time ?? 'N/A' }}</td>
                                 <td>{{ $newsEvent->event_time ?? 'N/A' }}</td>
                                 <td>{{ $newsEvent->news_content }}</td>
-                                <td><img width="100" src="{{ asset('storage/uploads/'. $newsEvent->photo) }}" alt="">
+                                <td><img width="100" src="{{ asset('uploads/'. $newsEvent->photo) }}" alt="">
                                 </td>
 
                                 <td>

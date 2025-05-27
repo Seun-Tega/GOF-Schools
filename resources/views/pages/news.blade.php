@@ -37,7 +37,7 @@
 
         <!-- Featured Blog -->
         <div class="featured-blog">
-            <img src="{{ asset('storage/uploads/' . $newsEvent->photo) }}" alt="Featured blog image">
+            <img src="{{ asset('uploads/' . $newsEvent->photo) }}" alt="Featured blog image">
             <div class="featured-content">
                 @php
                     $today = date('l, jS F, Y');
@@ -75,7 +75,7 @@
                 @forelse ($otherNews as $newsEvent)
                     <div class="col">
                         <div class="card h-100">
-                            <img src="{{ asset('storage/uploads/' . $newsEvent->photo) }}" class="card-img-top"
+                            <img src="{{ asset('uploads/' . $newsEvent->photo) }}" class="card-img-top"
                                 alt="...">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">{{ $newsEvent->title }}</h5>

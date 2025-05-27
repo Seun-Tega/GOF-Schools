@@ -65,8 +65,8 @@
           discipline,empowering students every facet of life.
         </p>
         <div class="d-flex flex-row flex-md-row gap-3">
-          <a class="enroll" href="Admission.html">Enroll Now <i class="bi bi-arrow-right"></i></a>
-          <a class="learn text-decoration-none text-center" href="who we are.html">Learn Now</a>
+          <a class="enroll" href="{{ route('application') }}">Enroll Now <i class="bi bi-arrow-right"></i></a>
+          <a class="learn text-decoration-none text-center" href="{{ route('about') }}">Learn Now</a>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
             development, and lifelong success.
           </p>
           <p class="section-create4">
-            <a class="text-decoration-none text-light" href="Admission.html">Enroll Your Child Today</a>
+            <a class="text-decoration-none text-light" href="{{ route('application') }}">Enroll Your Child Today</a>
           </p>
         </div>
       </div>
@@ -166,7 +166,7 @@
 
       <!-- Centered Button -->
       <div class="text-center mt-5">
-        <a class="d-inline-flex align-items-center gap-2 lab" href="Gallery.html">
+        <a class="d-inline-flex align-items-center gap-2 lab" href="{{ route('facilities')}}">
           Explore Our Facilities <i class="bi bi-arrow-right"></i>
         </a>
       </div>
@@ -228,7 +228,35 @@
 
   <section class="container my-5">
     <div class="d-flex justify-content-center gap-4 flex-wrap">
+      @foreach ($newsEvents as  $newsEvent)
+
       <div class="card news-card mb-4" style="width: 18rem" data-delay="0s">
+        <img src="{{  asset('uploads/'. $newsEvent->photo)}}" class="card-img-top" alt="News Image" />
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ Str::upper($newsEvent->title)}}
+          </h5>
+          <p class="card-text">
+           {{ $newsEvent->news_content }}
+          </p>
+          <div class="d-flex align-items-center mt-2">
+            <a href="{{ route('news', ['newsEvent' => $newsEvent->slug]) }}" class="enroll me-3 p-1">
+              Read More<i class="bi bi-arrow-right"></i>
+            </a>
+            <div class="d-flex align-items-center">
+              <span class="me-3 admin">Admin</span>
+              <i class="bi bi-eye me-1"></i>
+              @php
+                $views = rand(10, 1000);
+              @endphp
+              <span>{{ $views }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      @endforeach
+      {{-- <div class="card news-card mb-4" style="width: 18rem" data-delay="0s">
         <img src="{{ asset('assets/image/Group 19 (1).png') }}" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">
@@ -301,10 +329,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
     </div>
     <p class="text-center mx-auto">
-      <a class="post" href="">more post <span><i class="bi bi-arrow-right"></i></span>
+      <a class="post" href="{{ route('news.events') }}">more post <span><i class="bi bi-arrow-right"></i></span>
       </a>
     </p>
   </section>
