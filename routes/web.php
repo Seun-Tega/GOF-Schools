@@ -19,9 +19,7 @@ Route::get('/migration', function () {
     // Artisan::call('db:seed', [
     //     '--force' => true,
     // ]);
-    //  Artisan::call('storage:link', [
-    //     '--force' => true,
-    // ]);
+   
       Artisan::call('optimize:clear', [
         '--force' => true,
     ]);

@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentCallback = getNewsAndEvents;
     let currentType = null;
 
+
+    console.log(currentType);
+
     async function getNewsAndEvents(page = 1) {
         try {
             const response = await axios.get(`/news/all?page=${page}`);
@@ -94,6 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
             filter.classList.add("filtered");
 
             currentType = filter.dataset.type;
+            
+            console.log(currentType);
+
             currentCallback = filterNewsAndEvents;
 
             displayCard(1, currentCallback);

@@ -10,20 +10,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+  
+  </style>
 </head>
 
 <body style="background-color: #fff0f0">
 
   <x-header />
   <x-nav-bar />
-  
+
 
 
   <section class="position-relative overflow-hidden">
@@ -212,7 +215,7 @@
     </div>
   </section>
 
-  <section class="py-5">
+  <section class="my-5">
     <div class="container text-center">
       <h3 class="mb-3">NEWS & EVENTS</h3>
       <p class="event-text">
@@ -225,16 +228,18 @@
 
   <section class="container my-5">
     <div class="d-flex justify-content-center gap-4 flex-wrap">
-      @foreach ($newsEvents as  $newsEvent)
+      @foreach ($newsEvents as $newsEvent)
 
-      <div class="card news-card mb-4" style="width: 18rem" data-delay="0s">
-        <img src="{{  asset('uploads/'. $newsEvent->photo)}}" class="card-img-top" alt="News Image" />
+      <div class="card news-card" style="width: 18rem" data-delay="0s">
+        <img src="{{  asset('uploads/'. $newsEvent->photo)}}" class="card-img-top main-card" alt="News Image" />
         <div class="card-body">
           <h5 class="card-title">
             {{ Str::upper($newsEvent->title)}}
           </h5>
-          <p class="card-text">
-           {{ $newsEvent->news_content }}
+          <p class="card-text" >
+             {!! nl2br(e($newsEvent->news_content)) !!}
+            {{-- {{$newsEvent->news_content}} --}}
+
           </p>
           <div class="d-flex align-items-center mt-2">
             <a href="{{ route('news', ['newsEvent' => $newsEvent->slug]) }}" class="enroll me-3 p-1">
@@ -244,95 +249,23 @@
               <span class="me-3 admin">Admin</span>
               <i class="bi bi-eye me-1"></i>
               @php
-                $views = rand(10, 1000);
+              $views = rand(10, 1000);
               @endphp
               <span>{{ $views }}</span>
             </div>
           </div>
         </div>
       </div>
-        
+
       @endforeach
-      {{-- <div class="card news-card mb-4" style="width: 18rem" data-delay="0s">
-        <img src="{{ asset('assets/image/Group 19 (1).png') }}" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">
-            Announcement!!! Entrance Examination for Technician Programmes
-          </h5>
-          <p class="card-text">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Far far away,
-            behind the word mountains, far from the countries Vokalia and
-            Consonantia, there live the blind texts.
-          </p>
-          <div class="d-flex align-items-center mt-2">
-            <a href="news.html" class="enroll me-3 p-1">
-              Read More<i class="bi bi-arrow-right"></i>
-            </a>
-            <div class="d-flex align-items-center">
-              <span class="me-3 admin">Admin</span>
-              <i class="bi bi-eye me-1"></i>
-              <span>8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card news-card mb-4" style="width: 18rem" data-delay="0.2s">
-        <img src="{{ asset('assets/image/Group 19 (2).png') }}" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">
-            Announcement!!! Entrance Examination for Technician Programmes
-          </h5>
-          <p class="card-text">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Far far away,
-            behind the word mountains, far from the countries Vokalia and
-            Consonantia, there live the blind texts.
-          </p>
-          <div class="d-flex align-items-center mt-2">
-            <a href="news.html" class="enroll me-3 p-1">
-              Read More <span><i class="bi bi-arrow-right"></i></span>
-            </a>
-            <div class="d-flex align-items-center">
-              <span class="me-3 admin">Admin</span>
-              <i class="bi bi-eye me-1"></i>
-              <span>8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card news-card mb-4" style="width: 18rem" data-delay="0.6s">
-        <img src="{{ asset('assets/image/Group 19 (5).png') }}" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">
-            Announcement!!! Entrance Examination for Technician Programmes
-          </h5>
-          <p class="card-text">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Far far away,
-            behind the word mountains, far from the countries Vokalia and
-            Consonantia, there live the blind texts.
-          </p>
-          <div class="d-flex align-items-center mt-2">
-            <a href="news.html" class="enroll me-3">
-              Read More<span><i class="bi bi-arrow-right p-1"></i></span>
-            </a>
-            <div class="d-flex align-items-center">
-              <span class="me-3 admin">Admin</span>
-              <i class="bi bi-eye me-1"></i>
-              <span>8</span>
-            </div>
-          </div>
-        </div>
-      </div> --}}
+      
     </div>
-    <p class="text-center mx-auto">
+   
+  </section>
+   <p class="text-center mx-auto">
       <a class="post" href="{{ route('news.events') }}">more post <span><i class="bi bi-arrow-right"></i></span>
       </a>
     </p>
-  </section>
 
   <section class="">
     <div class="container">
@@ -428,8 +361,8 @@
     </div>
   </section>
 
-  <x-testimonial-card/>
-   <x-enroll-btn />
+  <x-testimonial-card />
+  <x-enroll-btn />
 
   <x-footer />
 

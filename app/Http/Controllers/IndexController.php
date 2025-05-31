@@ -3,17 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Models\NewsEvent;
+use App\services\Helper;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 
 class IndexController extends Controller
-{
+{   
+    public function __construct(public Helper $helper)
+    {
+        
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-       $newsEvents = NewsEvent::inRandomOrder()->take(3)->get();
+       $newsEvents = $this->helper->getNews();
 
+       Log::info($newsEvents);
        return view('index', compact('newsEvents'));
     }
 

@@ -70,7 +70,7 @@
 
 
         <!-- Text Column -->
-        <div class="col-12 col-md-6 pb-4">
+        <div class="col-12 col-md-6 pb-4 text-center">
           <h1 class="section-create">A Message from the Proprietress</h1>
           <p class="section-create2">
             As an institution dedicated to academic excellence and character development, GOF International School is
@@ -89,8 +89,8 @@
           <p>Proprietress, GOF International School</p>
         </div>
         <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
-          <img src="{{ asset('assets/image/image (30).png') }}" alt="GOF Image" class="img-fluid w-100 section-create4"
-            style="max-width: 500px;">
+          {{-- <img src="{{ asset('assets/image/image (30).png') }}" alt="GOF Image" class="img-fluid w-100 section-create4"
+            style="max-width: 500px;"> --}}
         </div>
       </div>
     </div>
