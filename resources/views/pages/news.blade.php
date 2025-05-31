@@ -45,7 +45,7 @@
                 <span class="date">{{ $today }}</span>
                 <h3>{{ $newsEvent->title }}</h3>
                 <p>
-                    {{ $newsEvent->news_content }}
+                    {!! nl2br(e($newsEvent->news_content)) !!}
                     <br><br>
                     @isset($newsEvent->event_date)
                         <strong>Date:</strong> {{ $newsEvent->event_date->format('l, jS F, Y') }} <br>
@@ -54,11 +54,7 @@
                     @endisset
 
                     <br><br>
-                    {{-- Candidates are expected to come with their writing materials only and comply with all COVID-19
-                    safety protocols.
-                    <br><br>
-                    Candidates are advised to check the College website (www.choijero-edu.ng) for their application form
-                    printout and examination slip. --}}
+                  
                 </p>
                 <div class="blog-footer">
                     <span>Admin</span>
@@ -80,15 +76,9 @@
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">{{ $newsEvent->title }}</h5>
                                 <p class="card-text">
-                                    {{ $newsEvent->news_content }}
+                                    {!! nl2br(e($newsEvent->news_content)) !!}
                                 </p>
                                 <div class="mt-auto d-flex align-items-center">
-
-                                    {{-- <div class="d-flex align-items-center">
-                                        <span class="me-3 admin">Admin</span>
-                                        <i class="bi bi-eye me-1"></i>
-                                        <span>8</span>
-                                    </div> --}}
                                 </div>
                             </div>
                         </div>

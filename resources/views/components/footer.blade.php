@@ -14,7 +14,7 @@
             <!-- Contact Section -->
             <div class="col-12 col-md-6 col-lg-2">
               <p class="icon-social">
-                <i class="bi bi-envelope-fill"></i> info@gofschools.net
+                <i class="bi bi-envelope-fill"></i> gofschooledu@gmail.com
               </p>
               <p class="icon-social">
                 <i class="bi bi-telephone-fill"></i> +234 803 606 0560

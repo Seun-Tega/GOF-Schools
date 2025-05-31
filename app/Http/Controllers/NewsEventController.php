@@ -5,12 +5,21 @@ namespace App\Http\Controllers;
 use App\Models\NewsEvent;
 use App\Http\Requests\StoreNewsEventRequest;
 use App\Http\Requests\UpdateNewsEventRequest;
+use App\services\Helper;
 use Devrabiul\ToastMagic\Facades\ToastMagic;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
+
 
 class NewsEventController extends Controller
-{
+{   
+    
+
+    public function __construct(public Helper $helper)
+    {   
+        
+    }
     /**
      * Display a listing of the resource.
      */
@@ -24,30 +33,29 @@ class NewsEventController extends Controller
 
     public function getAllNews()
     {
-        $newsEvents = NewsEvent::inRandomOrder()->paginate(6);
+        
+       $newsEvents = $this->helper->filterNews();
 
         return response()->json([
             'newsEvents' => $newsEvents,
         ], 200);
+
+
     }
 
 
     public function getFullNews(NewsEvent $newsEvent)
     {
-        $otherNews = NewsEvent::inRandomOrder()->take(3)->get();
+        $otherNews =  $this->helper->getNews();
+
         return view('pages.news', compact('newsEvent', 'otherNews'));
     }
 
     public function filter($currentType)
-    {   
-        $query = NewsEvent::query();
+    {
+   
 
-        if ($currentType !== 'all') {
-
-          $query->where('location', $currentType);
-
-        }
-        $newsEvents = $query->inRandomOrder()->paginate(6);
+        $newsEvents = $this->helper->filterNews($currentType);
 
         return response()->json([
             'newsEvents' => $newsEvents
@@ -101,9 +109,9 @@ class NewsEventController extends Controller
 
         $fileName = md5($uploadedFile->getClientOriginalName()) . $rad . '.' . $uploadedFile->getClientOriginalExtension();
 
-      //  $filePath =  $uploadedFile->storeAs('uploads', $fileName, 'public');
+        //  $filePath =  $uploadedFile->storeAs('uploads', $fileName, 'public');
 
-     $filePath = $uploadedFile->move(public_path('uploads'), $fileName);
+        $filePath = $uploadedFile->move(public_path('uploads'), $fileName);
 
 
         if (!$filePath) {

@@ -10,7 +10,7 @@
         <!-- Email -->
         <div class="logo-section2">
           <p class="fw-bold mb-1 mb-sm-0">Email</p>
-          <address class="mb-0">info@gofschools.net</address>
+          <address class="mb-0">gofschooledu@gmail.com</address>
         </div>
 
         <!-- Phone -->
