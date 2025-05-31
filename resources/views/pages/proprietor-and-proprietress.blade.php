@@ -57,7 +57,7 @@
             Thank you for visiting our website.We look foward to welcoming you to our school family.
           </p>
           <p>Warm regards.</p>
-          <p class="fw-bold">- Olugbenga Olowe, JP</p>
+          <p class="fw-bold">- Chief Olugbenga Olowe, JP</p>
           <p>Proprietor, GOF International Schools, Nigeria & Cote D'Ivoire.</p>
         </div>
       </div>
@@ -85,7 +85,7 @@
           <p class="section-create2">
             We welcome you to GOF International School, where dreams take flight, and excellence is our standard."*
           </p>
-          <p class="fw-bold">-Oyefunke Olowe</p>
+          <p class="fw-bold">-Chief Mrs Oyefunke Olowe</p>
           <p>Proprietress, GOF International School</p>
         </div>
         <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">

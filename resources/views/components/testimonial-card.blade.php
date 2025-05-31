@@ -25,7 +25,7 @@
                       <div class="card-body">
                           <img src="{{ asset('assets/image/Text.png') }}" class="img-fluid my-4" alt="..." />
                           <p class="card-text">
-                              Gulf School Nigeria made learning exciting for my son. He's more confident and engaged
+                          GOF International School Nigeria made learning exciting for my son. He's more confident and engaged
                               than ever before
                           </p>
                       </div>
@@ -41,7 +41,7 @@
                       <div class="card-body">
                           <img src="{{ asset('assets/image/Text.png') }}" class="img-fluid my-4" alt="..." />
                           <p class="card-text">
-                              The teachers at Gulf School Nigeria are so supportive. They genuinely care about each
+                              The teachers at GOF International School Nigeria are so supportive. They genuinely care about each
                               student's growth.
                           </p>
                       </div>
@@ -59,7 +59,7 @@
                       <div class="card-body">
                           <img src="{{ asset('assets/image/Text.png') }}" class="img-fluid my-4" alt="..." />
                           <p class="card-text">
-                              We’ve seen real progress since enrolling at Gulf School Nigeria. The environment is nurturing and disciplined.
+                              We’ve seen real progress since enrolling at GOF International School Nigeria. The environment is nurturing and disciplined.
                           </p>
                       </div>
                       <div class="card-footer board d-flex align-items-center gap-2">
@@ -74,7 +74,7 @@
                       <div class="card-body">
                           <img src="{{ asset('assets/image/Text.png') }}" class="img-fluid my-4" alt="..." />
                           <p class="card-text">
-                              I appreciate how Gulf School Nigeria combines academic excellence with strong character
+                              I appreciate how GOF International School Nigeria combines academic excellence with strong character
                               development
                           </p>
                       </div>
