@@ -1,15 +1,15 @@
 <section
-      class="footer-section my-5 py-3 px-4 px-md-5 text-white justify-content-between"
+      class="px-4 py-3 my-5 text-white footer-section px-md-5 justify-content-between"
     >
       <footer>
         <div class="container">
           <img
             src="{{ asset('assets/image/image (6).png') }}"
             alt=""
-            class="img-fluid mb-3 d-block mx-auto pb-3"
+            class="pb-3 mx-auto mb-3 img-fluid d-block"
           />
           <div
-            class="row gy-4 text-center text-md-start d-flex justify-content-between flex-wrap px-3 px-md-4"
+            class="flex-wrap px-3 text-center row gy-4 text-md-start d-flex justify-content-between px-md-4"
           >
             <!-- Contact Section -->
             <div class="col-12 col-md-6 col-lg-2">
@@ -45,37 +45,37 @@
             <div class="col-12 col-md-6 col-lg-2">
               <h5 class="quick2">Quick Links</h5>
               <ul class="list-unstyled">
-                <li><a class="quick2 text-white" href="{{ route('index') }}">Home</a></li>
-                <li><a class="quick2 text-white" href="{{ route('about') }}">About</a></li>
-                <li><a class="quick2 text-white" href="{{ route('application') }}">Admission</a></li>
-                <li><a class="quick2 text-white" href="{{ route('curriculum') }}">Academics</a></li>
-                <li><a class="quick2 text-white" href="#">Alumni</a></li>
+                <li><a class="text-white quick2" href="{{ route('index') }}">Home</a></li>
+                <li><a class="text-white quick2" href="{{ route('about') }}">About</a></li>
+                <li><a class="text-white quick2" href="{{ route('application') }}">Admission</a></li>
+                <li><a class="text-white quick2" href="{{ route('curriculum') }}">Academics</a></li>
+                <li><a class="text-white quick2" href="#">Alumni</a></li>
               </ul>
             </div>
 
             <!-- Branches -->
             <div class="col-12 col-md-6 col-lg-2">
               <h5 class="quick2">Other Branches</h5>
-              <p>Gof International (Côte d'Ivoire)</p>
-              <p>Gof International (Nigeria)</p>
+              <p>GOF International (Côte d'Ivoire)</p>
+              <p>GOF International (Nigeria)</p>
             </div>
 
             <!-- Duplicate Links (if needed) -->
             <div class="col-12 col-md-6 col-lg-2">
               <h5 class="quick2">Links</h5>
               <ul class="list-unstyled">
-               <li><a class="quick2 text-white" href="{{ route('index') }}">Home</a></li>
-                <li><a class="quick2 text-white" href="{{ route('about') }}">About</a></li>
-                <li><a class="quick2 text-white" href="{{ route('application') }}">Admission</a></li>
-                <li><a class="quick2 text-white" href="{{ route('curriculum') }}">Academics</a></li>
-                <li><a class="quick2 text-white" href="#">Alumni</a></li>
-                <li><a class="quick2 text-white" href="{{ route('facilities')}}">Our Facilities</a></li>
+               <li><a class="text-white quick2" href="{{ route('index') }}">Home</a></li>
+                <li><a class="text-white quick2" href="{{ route('about') }}">About</a></li>
+                <li><a class="text-white quick2" href="{{ route('application') }}">Admission</a></li>
+                <li><a class="text-white quick2" href="{{ route('curriculum') }}">Academics</a></li>
+                <li><a class="text-white quick2" href="#">Alumni</a></li>
+                <li><a class="text-white quick2" href="{{ route('facilities')}}">Our Facilities</a></li>
               </ul>
             </div>
           </div>
         </div>
         <hr />
-        <p class="foot text-center text-white mb-0">
+        <p class="mb-0 text-center text-white foot">
           © 2025 | All rights reserved | GOF International Schools.
         </p>
       </footer>

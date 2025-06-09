@@ -16,10 +16,10 @@
   <x-header />
   <x-nav-bar />
 
-  <section class="second-hero py-5">
+  <section class="py-5 second-hero">
     <div class="container">
       <h3 class="fs-1 fs-md-2 fs-lg-1 fw-400">Our Curriculum</h3>
-      <p class="lead text-center">
+      <p class="text-center lead">
         At GOF International School, our curriculum fosters excellence, creativity, and critical thinking for future
         success.
       </p>
@@ -30,10 +30,10 @@
     <div class="container">
       <div class="">
         <div class="py-2">
-          <h2 class=" text-center">Our Curricular Activities</h2>
+          <h2 class="text-center ">Our Curricular Activities</h2>
           <p class="mx-auto">
             At GOF International Schools, our diverse range of curricular activities ensures that every student receives
-            a well-rounded education. From a comprehensive academic program to STEM innovation, creative arts, and
+            a well-rounded education. From a comprehensive academic program to STEAM innovation, creative arts, and
             physical education, we cater to every aspect of intellectual and personal development.
           </p>
         </div>
@@ -46,7 +46,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card h-100 border-card">
           <div class="card-body">
-            <img src="{{ asset('assets/image/Icon Container (2).png') }}" alt="IGCSE" class="img-fluid mb-3">
+            <img src="{{ asset('assets/image/Icon Container (2).png') }}" alt="IGCSE" class="mb-3 img-fluid">
             <h5 class="card-title">IGCSE</h5>
             <p class="card-text">
             At GOF International Schools, the IGCSE (International General Certificate of Secondary Education) 
@@ -62,8 +62,8 @@
 
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card h-100 border-card">
-          <div class="card-body bg-white">
-            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="IB" class="img-fluid mb-3">
+          <div class="bg-white card-body">
+            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="IB" class="mb-3 img-fluid">
             <h5 class="card-title">IB</h5>
             <p class="card-text">
             At GOF International Schools, the International Baccalaureate (IB) programme 
@@ -78,8 +78,8 @@
 
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card h-100 border-card">
-          <div class="card-body bg-white">
-            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="WAEC/NECO" class="img-fluid mb-3">
+          <div class="bg-white card-body">
+            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="WAEC/NECO" class="mb-3 img-fluid">
             <h5 class="card-title">WAEC/NECO</h5>
             <p class="card-text">
             At GOF International Schools, the WAEC and NECO curriculum provides students 

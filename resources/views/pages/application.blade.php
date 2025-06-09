@@ -20,7 +20,7 @@
   <x-header />
   <x-nav-bar />
 
-  <section class="second-hero py-5">
+  <section class="py-5 second-hero">
     <div class="container">
       <h3 class="fs-1 fs-md-2 fs-lg-1 fw-400">Admission</h3>
       <p class="lead">
@@ -48,8 +48,8 @@
         </span>
       </div>
 
-      <div class="row mb-3">
-        <div class="col-md-6 mb-2 mb-md-0">
+      <div class="mb-3 row">
+        <div class="mb-2 col-md-6 mb-md-0">
           <label for="gender" class="form-label"><strong>Gender:</strong></label>
           <select id="form2" class="form-select" name="gender">
             <option value="">Select Gender</option>
@@ -98,8 +98,8 @@
         </span>
       </div>
 
-      <div class="row mb-3">
-        <div class="col-md-6 mb-2 mb-md-0">
+      <div class="mb-3 row">
+        <div class="mb-2 col-md-6 mb-md-0">
           <label for="guardianEmail" class="form-label"><strong>Email:</strong></label>
           <input type="email" id="form2" class="form-control" placeholder="Enter Email Address" name="email"
             value="{{ old('email') }}">
@@ -121,8 +121,8 @@
         </div>
       </div>
 
-      <div class="row mb-3">
-        <div class="col-md-6 mb-2 mb-md-0">
+      <div class="mb-3 row">
+        <div class="mb-2 col-md-6 mb-md-0">
           <label for="relationship" class="form-label"><strong>Relationship to Student:</strong></label>
           <input type="text" id="form2" class="form-control" placeholder="Enter Relationship"
             name="relationship_to_student" value="{{ old('relationship_to_student') }}">
@@ -141,26 +141,16 @@
 
       <h4 class="mt-4">Enrollment Details</h4>
 
-      <div class="row mb-3">
-        <div class="col-md-6 mb-2 mb-md-0">
+      <div class="mb-3 row">
+        <div class="mb-2 col-md-6 mb-md-0">
           <label for="classApplying" class="form-label"><strong>Class Applying For:</strong></label>
           <select id="form2" class="form-select" name="student_class">
-          <option value="Creche">Creche</option>
-            <option value="Pre-Nursery">Pre-Nursery</option>
-            <option value="Nursery">Nursery</option>
-            <option value="Lower-KG">Lower-KG</option>
-            <option value="Upper-KG">Upper-KG</option>
-            <option value="Year 1">Year 1</option>
-            <option value="Year 2">Year 2</option>
-            <option value="Year 3">Year 3</option>
-            <option value="Year 4">Year 4</option>
-            <option value="Year 5">Year 5</option>
-            <option value="Year 7">Year 7</option>
-            <option value="Year 8">Year 8</option>
-            <option value="Year 9">Year 9</option>
-            <option value="Year 10">Year 10</option>
-            <option value="Year 11">Year 11</option>
-            <option value="Year 12">Year 12</option>
+
+            @foreach (\App\Enums\ClassEnum::cases() as $class )
+             <option value="{{ $class->value }}" @selected(old('student_class') === $class->value)>{{ Str::replace('_', '-',$class->name)}}</option>
+              
+            @endforeach
+      
           </select>
 
           <span class="text-danger">
@@ -170,10 +160,9 @@
           </span>
         </div>
 
-        <div class="col-md-6 mb-2 mb-md-0">
+        <div class="mb-2 col-md-6 mb-md-0">
           <label for="boardingType" class="form-label"> <strong>Day/Boarding:</strong></label>
           <select id="form2" class="form-select" name="student_type">
-            <option value=""></option>
             <option value="DAY">DAY</option>
             <option value="BOARDING">BOARDING</option>
           </select>
@@ -184,13 +173,15 @@
             @enderror
           </span>
         </div>
-         <div class="col-md-6 my-2 mb-md-0">
+         <div class="my-2 col-md-6 mb-md-0">
           <label for="location" class="form-label"> <strong>School Location:</strong></label>
           <select id="form2" class="form-select" name="location">
-            <option value=""></option>
-            <option value="osogbo">OSOGBO , NIGERIA</option>
-            <option value="abidjan">EJIGBO, NIGERIA</option>
-            <option value="ejigbo">ABIDJAN, COTE D'IVOIRE</option>
+
+            @foreach (\App\Enums\Location::cases() as $location )
+             <option value="{{ $location->value }}" @selected(old('location') === $location->value)>{{Str::replace('_', ',', $location->value )}}</option>
+              
+            @endforeach
+           
           </select>
 
           <span class="text-danger">
@@ -214,7 +205,7 @@
         </span>
       </div>
 
-      <div class="form-check py-3">
+      <div class="py-3 form-check">
         <input class="form-check-input" type="checkbox" id="confirmation" name="terms" value="1" {{ old('terms')
           ? 'checked' : '' }}>
         <label class="form-check-label" for="confirmation">
@@ -230,8 +221,8 @@
       </div>
 
 
-      <div class="text-center  submit">
-        <button type="submit" class=" px-5 py-2 submit">Submit</button>
+      <div class="text-center submit">
+        <button type="submit" class="px-5 py-2 submit">Submit</button>
       </div>
 
 
@@ -240,10 +231,10 @@
   </section>
 
 
-  <section class="py-5">
+  <section class="">
     <div id="ward" class="container">
       <div class="row align-items-center d-flex flex-column flex-md-row justify-content-between">
-        <div class="col-md-8 mb-3 mb-md-0">
+        <div class="mb-3 col-md-8 mb-md-0">
           <h4 class="ward3">ENROLL YOUR WARDS WITH US</h4>
           <p>
             We are always on the lookout for talented individuals who are enthusiastic about making a
@@ -253,8 +244,8 @@
             goals.
           </p>
         </div>
-        <div class="col-md-3 text-md-end text-center">
-          <a class="ward2" href="Admission.html">Apply Now</a>
+        <div class="text-center col-md-3 text-md-end">
+          <a class="ward2" href="#">Apply Now</a>
         </div>
       </div>
     </div>

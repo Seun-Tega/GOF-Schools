@@ -18,7 +18,7 @@
 
 
 
-  <section class="second-hero py-5">
+  <section class="py-5 second-hero">
     <div class="container">
       <h3 class="fs-1 fs-md-2 fs-lg-1 fw-400">Our Gallery</h3>
       <p class="lead">
@@ -30,74 +30,73 @@
   <section class="py-5">
     <div class="container text-center">
       <h3 class="mb-3 text-center">Our Gallery</h3>
-      <p class="event-text">
-        Our blog is a treasure trove of informative and engaging articles written by our team of nutritionists,
-        dietitians, and wellness experts. Here's what you can expect from our blog.
-      </p>
+     <p class="event-text">
+  Welcome to the Gulf School Gallery — a vibrant collection of moments that capture the heart of our learning community. From classroom creativity and cultural celebrations to sports, science fairs, and everyday smiles, our gallery showcases the spirit, talent, and joy of our students and staff. Take a look and experience the GOF School difference through our lens.
+</p>
     </div>
   </section>
 
   <section class="container py-4">
     <div class="row justify-content-center g-3">
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (20).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (20).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (17).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (17).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (18).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (18).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (19).png') }}" alt="" class="img-fluid rounded">
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (21).png') }}" alt="" class="img-fluid rounded">
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (22).png') }}" alt="" class="img-fluid rounded">
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (23).png') }}" alt="" class="img-fluid rounded">
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (24).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (19).png') }}" alt="" class="rounded img-fluid">
       </div>
 
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (22).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (21).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (27).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (22).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (28).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (23).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (23).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (24).png') }}" alt="" class="rounded img-fluid">
       </div>
 
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (22).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (22).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (27).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (27).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (28).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (21).png') }}" alt="" class="rounded img-fluid">
       </div>
-      <div class="col-6 col-sm-4 col-md-3 text-center">
-        <img src="{{ asset('assets/image/Image (23).png') }}" alt="" class="img-fluid rounded">
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (23).png') }}" alt="" class="rounded img-fluid">
+      </div>
+
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (22).png') }}" alt="" class="rounded img-fluid">
+      </div>
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (27).png') }}" alt="" class="rounded img-fluid">
+      </div>
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (19).png') }}" alt="" class="rounded img-fluid">
+      </div>
+      <div class="text-center col-6 col-sm-4 col-md-3">
+        <img src="{{ asset('assets/image/Image (23).png') }}" alt="" class="rounded img-fluid">
       </div>
     </div>
   </section>
 
   <section>
-    <div class="container d-flex justify-content-between align-items-center py-3 flex-wrap">
+    <div class="container flex-wrap py-3 d-flex justify-content-between align-items-center">
       <p class="mb-2 mb-md-0 fw-bold">1/5</p>
 
-      <div class="d-flex gap-2 ms-auto">
+      <div class="gap-2 d-flex ms-auto">
         <p class="button-class"> <span> <i class="bi bi-arrow-left"></i></span>Prev</p>
         <p class="button-class2">Next <span><i class="bi bi-arrow-right"></i></span></p>
       </div>

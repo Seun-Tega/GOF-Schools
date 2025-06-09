@@ -2,8 +2,62 @@
     padding: 4rem 2rem;
     background: #fff;
     text-align: center;
-  }
-  .featured-blog {
+}
+
+
+.featured-content img {
+  float: left;
+  width: 400px; /* reduce width to allow text room */
+  height: auto;
+  margin: 0 16px 16px 0; /* standard margin for spacing */
+  border-radius: 12px;
+}
+
+.featured-content {
+  overflow: hidden;
+  line-height: 1.6;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  padding: 4rem;
+  border-radius: 16px;
+  margin: auto;
+}
+
+/* Optional: remove large padding/margin from text elements */
+.featured-content p,
+.featured-content span,
+.featured-content h3 {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* Clear float after content if needed */
+.featured-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Optional: Clearfix if you want to contain float without overflow */
+.featured-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive: Stack image on smaller screens */
+@media (max-width: 768px) {
+    .featured-content img {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+}
+
+
+/* 
+ .featured-blog {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,160 +67,161 @@
     border-radius: 16px;
   }
   
+  
   .featured-blog img {
     width: 100%;
     max-width: 700px;
     border-radius: 16px;
     margin-bottom: 1rem;
-  }
   
-  .featured-content {
-    max-width: 700px;
-    text-align: left;
   }
-  
-  .featured-content .date {
+   
+.featured-content {
+  max-width: 700px;
+  text-align: left;
+} */
+
+.featured-content .date {
     color: red;
     font-size: 0.85rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-  }
-  
-  .featured-content h3 {
+}
+
+.featured-content h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .featured-content p {
+}
+
+.featured-content p {
     font-size: 1rem;
     margin-bottom: 1rem;
-  }
-  
-  .blog-cards {
+}
+
+.blog-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-  }
-  
-  .blog-card {
+}
+
+.blog-card {
     background: #fff;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     width: 300px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-  }
-  
-  .blog-card img {
+}
+
+.blog-card img {
     width: 100%;
     height: auto;
-  }
-  
-  .blog-content {
+}
+
+.blog-content {
     padding: 1rem;
     text-align: left;
-  }
-  
-  .blog-content .date {
+}
+
+.blog-content .date {
     font-size: 0.75rem;
     color: red;
     margin-bottom: 0.5rem;
     display: block;
-  }
-  
-  .blog-content h3 {
+}
+
+.blog-content h3 {
     font-size: 1rem;
     color: #222;
     margin-bottom: 0.5rem;
-  }
-  
-  .blog-content p {
+}
+
+.blog-content p {
     font-size: 0.875rem;
     color: #555;
     margin-bottom: 1rem;
-  }
-  
-  .blog-footer {
+}
+
+.blog-footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.75rem;
     color: #888;
     margin-bottom: 0.5rem;
-  }
-  
-  .read-more {
+}
+
+.read-more {
     color: red;
     font-size: 0.85rem;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .blog-header h2 {
+}
+
+.blog-header h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .blog-header p {
+}
+
+.blog-header p {
     font-size: 1rem;
     color: #666;
     margin-bottom: 2rem;
-  }
-  
-  .blog-cards {
+}
+
+.blog-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-  }
-  
-  .blog-card {
+}
+
+.blog-card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 300px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .blog-card img {
+}
+
+.blog-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-  }
-  
-  .blog-meta .date {
+}
+
+.blog-meta .date {
     font-size: 0.8rem;
     color: #999;
     margin: 0.5rem 0;
-  }
-  
-  .blog-card h3 {
+}
+
+.blog-card h3 {
     font-size: 1rem;
     color: #333;
     margin: 0.5rem 0;
-  }
-  
-  .blog-card .excerpt {
+}
+
+.blog-card .excerpt {
     font-size: 0.875rem;
     color: #666;
     margin-bottom: 1rem;
-  }
-  
-  .blog-footer {
+}
+
+.blog-footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.75rem;
     color: #999;
     margin-bottom: 0.5rem;
-  }
-  
-  .read-more {
+}
+
+.read-more {
     color: red;
     font-size: 0.85rem;
     text-decoration: none;
-  }
-  
+}

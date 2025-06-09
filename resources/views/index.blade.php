@@ -29,7 +29,7 @@
 
 
 
-  <section class="position-relative overflow-hidden">
+  <section class="overflow-hidden position-relative">
     <!-- Carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -59,7 +59,7 @@
     </div>
 
     <!-- Hero Overlay -->
-    <div class="position-absolute top-0 start-0 text-white p-4" style="z-index: 10; max-width: 600px">
+    <div class="top-0 p-4 text-white position-absolute start-0" style="z-index: 10; max-width: 600px">
       <div class="container gof">
         <h2 class="gof2">GOF INTERNATIONAL SCHOOL</h2>
         <p class="mb-2">
@@ -67,9 +67,9 @@
           Schools,We offer a dynamic blend of innovation, creativity, and
           discipline,empowering students every facet of life.
         </p>
-        <div class="d-flex flex-row flex-md-row gap-3">
+        <div class="flex-row gap-3 d-flex flex-md-row">
           <a class="enroll" href="{{ route('application') }}">Enroll Now <i class="bi bi-arrow-right"></i></a>
-          <a class="learn text-decoration-none text-center" href="{{ route('about') }}">Learn Now</a>
+          <a class="text-center learn text-decoration-none" href="{{ route('about') }}">Learn Now</a>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@
     <div class="container">
       <div class="row align-items-center">
         <!-- Image Column -->
-        <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+        <div class="mb-4 text-center col-12 col-md-6 mb-md-0">
           <img src="{{ asset('assets/image/image (10).png') }}" alt="GOF Image" class="img-fluid w-100 section-create3"
             style="max-width: 500px" />
         </div>
@@ -112,7 +112,7 @@
 
   <section class="py-1">
     <div class="container">
-      <div class="row justify-content-center text-center">
+      <div class="text-center row justify-content-center">
         <div class="col-lg-8 col-md-10">
           <h3 class="mb-3">Our Facilities</h3>
           <p class="section-text">
@@ -130,10 +130,10 @@
       <div class="row justify-content-center g-4">
         <!-- Card 1 -->
         <div class="col-md-6 col-lg-4">
-          <div class="card facility-card h-100 shadow-sm border border-2 box-shadow">
+          <div class="border border-2 shadow-sm card facility-card h-100 box-shadow">
             <img src="{{ asset('assets/image/image (11).png') }}" class="card-img-top" alt="Modern Classroom" />
             <div class="card-body">
-              <p class="text-muted mb-1">Class</p>
+              <p class="mb-1 text-muted">Class</p>
               <h5 class="card-title">Modern Classroom</h5>
               <p class="card-text">
                 Our classrooms are thoughtfully designed to create an
@@ -147,10 +147,10 @@
 
         <!-- Card 2 -->
         <div class="col-md-6 col-lg-4">
-          <div class="card facility-card h-100 shadow-sm border border-2 box-shadow">
+          <div class="border border-2 shadow-sm card facility-card h-100 box-shadow">
             <img src="{{ asset('assets/image/image (12).png') }}" class="card-img-top" alt="Science Labs" />
             <div class="card-body">
-              <p class="text-muted mb-1">Laboratories</p>
+              <p class="mb-1 text-muted">Laboratories</p>
               <h5 class="card-title">
                 State-of-the-Art Science Laboratories
               </h5>
@@ -165,21 +165,21 @@
       </div>
 
       <!-- Centered Button -->
-      <div class="text-center mt-5">
-        <a class="d-inline-flex align-items-center gap-2 lab" href="{{ route('facilities')}}">
+      <div class="mt-5 text-center">
+        <a class="gap-2 d-inline-flex align-items-center lab" href="{{ route('facilities')}}">
           Explore Our Facilities <i class="bi bi-arrow-right"></i>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="second-hero py-5">
+  <section class="py-5 second-hero">
     <div class="container">
-      <div class="row align-items-center flex-column flex-md-row text-center text-md-start">
+      <div class="text-center row align-items-center flex-column flex-md-row text-md-start">
         <!-- Image Column -->
-        <div class="col-md-6 mb-4 mb-md-0">
+        <div class="mb-4 col-md-6 mb-md-0">
           <img src="{{ asset('assets/image/Card.png') }}" alt="Card Image"
-            class="img-fluid w-75 w-md-100 mx-auto d-block" />
+            class="mx-auto img-fluid w-75 w-md-100 d-block" />
         </div>
 
         <!-- Text Content Column -->
@@ -192,7 +192,7 @@
           </p>
 
           <!-- Flex Stats Section -->
-          <div class="row text-center gy-4">
+          <div class="text-center row gy-4">
             <div class="col-6 col-md-6">
               <h1 class="display-6 counter" data-target="5000">0</h1>
               <p class="mb-0">Enrolled Students</p>
@@ -227,7 +227,7 @@
   </section>
 
   <section class="container my-5">
-    <div class="d-flex justify-content-center gap-4 flex-wrap">
+    <div class="flex-wrap gap-4 d-flex justify-content-center">
       @foreach ($newsEvents as $newsEvent)
 
       <div class="card news-card" style="width: 18rem" data-delay="0s">
@@ -241,8 +241,8 @@
             {{-- {{$newsEvent->news_content}} --}}
 
           </p>
-          <div class="d-flex align-items-center mt-2">
-            <a href="{{ route('news', ['newsEvent' => $newsEvent->slug]) }}" class="enroll me-3 p-1">
+          <div class="mt-2 d-flex align-items-center">
+            <a href="{{ route('news', ['newsEvent' => $newsEvent->slug]) }}" class="p-1 enroll me-3">
               Read More<i class="bi bi-arrow-right"></i>
             </a>
             <div class="d-flex align-items-center">
@@ -262,7 +262,7 @@
     </div>
    
   </section>
-   <p class="text-center mx-auto">
+   <p class="mx-auto text-center">
       <a class="post" href="{{ route('news.events') }}">more post <span><i class="bi bi-arrow-right"></i></span>
       </a>
     </p>
@@ -275,7 +275,7 @@
           <p class="gof-text">
             At GOF International Schools, our diverse range of curricular
             activities ensures that every student receives a well-rounded
-            education. From a comprehensive academic program to STEM
+            education. From a comprehensive academic program to STEAM
             innovation, creative arts, and physical education, we cater to
             every aspect of intellectual and personal development.
           </p>
@@ -289,7 +289,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-card" data-aos="fade-up" data-aos-delay="0">
           <div class="card-body">
-            <img src="{{ asset('assets/image/Icon Container (2).png') }}" alt="" class="img-fluid mb-3" />
+            <img src="{{ asset('assets/image/Icon Container (2).png') }}" alt="" class="mb-3 img-fluid" />
             <h5 class="card-title">Comprehensive Academic Programs</h5>
             <p class="card-text">
               GOF International Schools offer a robust curriculum that
@@ -303,8 +303,8 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-card" data-aos="zoom-in" data-aos-delay="100">
           <div class="card-body">
-            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="" class="img-fluid mb-3" />
-            <h5 class="card-title">STEM Education</h5>
+            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="" class="mb-3 img-fluid" />
+            <h5 class="card-title">STEAM Education</h5>
             <p class="card-text">
               Science, Technology, Engineering, and Mathematics are emphasized
               through practical lessons, innovation labs, and projects that
@@ -317,7 +317,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-card" data-aos="flip-left" data-aos-delay="200">
           <div class="card-body">
-            <img src="{{ asset('assets/image/Icon Container (4).png') }}" alt="" class="img-fluid mb-3" />
+            <img src="{{ asset('assets/image/Icon Container (4).png') }}" alt="" class="mb-3 img-fluid" />
             <h5 class="card-title">Positive Student Feedback</h5>
             <p class="card-text">
               We take pride in the positive feedback we receive from our
@@ -331,7 +331,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="card h-100 border-card" data-aos="fade-left" data-aos-delay="300">
           <div class="card-body">
-            <img src="{{ asset('assets/image/Icon Container.png') }}" alt="" class="img-fluid mb-3 industry" />
+            <img src="{{ asset('assets/image/Icon Container.png') }}" alt="" class="mb-3 img-fluid industry" />
             <h5 class="card-title">Industry Partnerships</h5>
             <p class="card-text">
               We have established strong partnerships with industry leaders,
@@ -352,7 +352,7 @@
           <p>
             At GOF International Schools, our diverse range of curricular
             activities ensures that every student receives a well-rounded
-            education. From a comprehensive academic program to STEM
+            education. From a comprehensive academic program to STEAM
             innovation, creative arts, and physical education, we cater to
             every aspect of intellectual and personal development.
           </p>

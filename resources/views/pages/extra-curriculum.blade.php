@@ -16,9 +16,9 @@
   <x-header />
   <x-nav-bar />
 
-  <section class="second-hero py-5">
+  <section class="py-5 second-hero">
     <div class="container">
-      <h3 class="fs-1 fs-md-2 fs-lg-1 fw-400">Our Cirriculum</h3>
+      <h3 class="fs-1 fs-md-2 fs-lg-1 fw-400">Our Curriculum</h3>
       <p class="lead">
         At GOF International School, our curriculum fosters excellence, creativity, and critical thinking for future
         success.
@@ -46,7 +46,7 @@
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card h-100 border-card">
           <div class="card-body">
-            <img src="{{ asset('assets/image/Icon Container (2).png') }}" alt="IGCSE" class="img-fluid mb-3">
+            <img src="{{ asset('assets/image/Icon Container (2).png') }}" alt="IGCSE" class="mb-3 img-fluid">
             <h5 class="card-title">Core Academic Subjects</h5>
             <p class="card-text">
              <p><b>English Language & Literature</b> : Emphasis on reading comprehension, writing, 
@@ -62,8 +62,8 @@
 
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card h-100 border-card">
-          <div class="card-body bg-white">
-            <img src="{{ asset('assets/image/Icon Container.png') }}" alt="IB" class="img-fluid mb-3">
+          <div class="bg-white card-body">
+            <img src="{{ asset('assets/image/Icon Container.png') }}" alt="IB" class="mb-3 img-fluid">
             <h5 class="card-title">Extra-Curricular Activities</h5>
             <p class="card-text">
               <p><b>Clubs: </b>Debate, Robotics, Gardening, Languages, Chess, and more.</p>
@@ -77,8 +77,8 @@
 
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card h-100 border-card">
-          <div class="card-body bg-white">
-            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="WAEC/NECO" class="img-fluid mb-3">
+          <div class="bg-white card-body">
+            <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="WAEC/NECO" class="mb-3 img-fluid">
             <h5 class="card-title">Digital Literacy & Technology</h5>
             <p class="card-text">
               Coding and computational thinking from an early stage. Use of Learning Management Systems (LMS) for
@@ -96,7 +96,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="card h-100 border-card">
             <div class="card-body ">
-              <img src="{{ asset('assets/image/Icon Container.png') }}" alt="IGCSE" class="img-fluid mb-3">
+              <img src="{{ asset('assets/image/Icon Container.png') }}" alt="IGCSE" class="mb-3 img-fluid">
               <h5 class="card-title">Creative Arts & Expression</h5>
               <p class="card-text">
                 Visual Arts, Music, Drama, and Dance to nurture creativity and emotional intelligence. Opportunities to
@@ -108,8 +108,8 @@
 
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="card h-100 border-card">
-            <div class="card-body bg-white">
-              <img src="{{ asset('assets/image/Icon Container (4).png') }}" alt="IB" class="img-fluid mb-3">
+            <div class="bg-white card-body">
+              <img src="{{ asset('assets/image/Icon Container (4).png') }}" alt="IB" class="mb-3 img-fluid">
               <h5 class="card-title">Physical Education & Wellbeing</h5>
               <p class="card-text">
                 Sports, fitness routines, and health education for physical development. Mindfulness, life skills, and
@@ -121,8 +121,8 @@
 
         <div class="col-12 col-sm-6 col-lg-4">
           <div class="card h-100 border-card">
-            <div class="card-body bg-white">
-              <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="WAEC/NECO" class="img-fluid mb-3">
+            <div class="bg-white card-body">
+              <img src="{{ asset('assets/image/Icon Container (1).png') }}" alt="WAEC/NECO" class="mb-3 img-fluid">
               <h5 class="card-title">Blended Learning Approach</h5>
               <p class="card-text">
                 In-class instruction complemented by interactive online platforms. Personalized learning paths supported

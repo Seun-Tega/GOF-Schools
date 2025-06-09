@@ -1,5 +1,7 @@
 <?php
 
+use App\Enums\ClassEnum;
+use App\Enums\Location;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -22,9 +24,9 @@ return new class extends Migration
             $table->string('phone');
             $table->string('relationship_to_student');
             $table->string('guardian_address')->nullable();
-            $table->enum('student_class', ['JSS1', 'JSS2', 'JSS3', 'SS1', 'SS2', 'SS3']);
+            $table->enum('student_class', array_column(ClassEnum::cases(), 'value'));
             $table->enum('student_type', ['day', 'boarding']);
-            $table->enum('location', ['osogbo', 'abidjan', 'ejigbo']);
+            $table->enum('location', array_column(Location::cases(), 'value'));
             $table->string('condition')->nullable();
             $table->string('message')->nullable(); 
             $table->boolean('terms')->default(false); 

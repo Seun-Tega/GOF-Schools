@@ -2,7 +2,10 @@
 
 namespace App\Http\Requests;
 
+use App\Enums\ClassEnum;
+use App\Enums\Location;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\Enum;
 
 class StoreStudentRequest extends FormRequest
 {
@@ -31,9 +34,9 @@ class StoreStudentRequest extends FormRequest
             'phone' => ['required', 'string', 'max:20'],
             'relationship_to_student' => ['required', 'string', 'max:100'],
             'guardian_address' => ['required', 'string', 'max:255'],
-            'student_class' => ['required', 'in:JSS1,JSS2,JSS3,SS1,SS2,SS3'],
+            'student_class' => ['required', new Enum(ClassEnum::class)],
             'student_type' => ['required', 'in:DAY,BOARDING'],
-            'location' => ['required', 'in:osogbo,abidjan,ejigbo'],
+            'location' => ['required', new Enum(Location::class)],
             'condition' => ['nullable', 'string', 'max:1000'],
             'terms' => ['accepted'],
 
