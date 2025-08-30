@@ -4,7 +4,17 @@
 }
 .logo-section2{
   font-size: 12px;
-}li .nav-border {
+}
+
+@media (max-width:376px) {
+  .logo-section2{
+    font-size: 10px;
+  }
+  
+}
+
+
+li .nav-border {
   border:2px solid white ;
   border-top: none;
   border-bottom: none;
