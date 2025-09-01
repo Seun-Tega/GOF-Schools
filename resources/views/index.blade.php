@@ -28,7 +28,6 @@
   <x-nav-bar />
 
 
-
   <section class="overflow-hidden position-relative">
     <!-- Carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -64,8 +63,8 @@
         <h2 class="gof2">GOF INTERNATIONAL SCHOOL</h2>
         <p class="mb-2">
           Discover a school that goes beyond academics! At GOF International
-          Schools,We offer a dynamic blend of innovation, creativity, and
-          discipline,empowering students every facet of life.
+          Schools,we offer a dynamic blend of innovation, creativity, and
+          discipline,empowering students in every facet of life.
         </p>
         <div class="flex-row gap-3 d-flex flex-md-row">
           <a class="enroll" href="{{ route('application') }}">Enroll Now <i class="bi bi-arrow-right"></i></a>

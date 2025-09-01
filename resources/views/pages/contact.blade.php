@@ -64,7 +64,7 @@
           <div class="mt-3 contact">
             <div class="d-flex justify-content-between">
               <div>
-                <p class="mb-1"><strong>Location</strong></p>
+                <p class="mb-1"><strong>Locations</strong></p>
                
                 <p>GOF International school (Côte d'Ivoire)</p>
                 <p>GOF International school (Nigeria)</p>
@@ -75,11 +75,11 @@
 
           <div class="mt-4">
             <p><strong>Social Profile</strong></p>
-            <a href=""><i class="bi bi-facebook me-2 arrow3 btn btn-primary"></i></a>
-            <a href=""><i class="bi bi-twitter-x me-2 btn btn-dark arrow3"></i></a>
-            <a href=""><i class="bi bi-linkedin btn btn-primary arrow3"></i></a>
+            <a href="https://youtube.com/@gofmyschool1986?si=ssn-s-A99T2Mz8fd"><i class="bi bi-youtube me-2 arrow3 btn btn-dark"></i></a>
+            <a href="https://www.tiktok.com/@gofmyschool?_t=8oVd5aVqrm1&_r=1"><i class="bi bi-tiktok me-2 btn btn-dark arrow3"></i></a>
+            <a href=""><i class="bi bi-linkedin btn btn-dark arrow3"></i></a>
           </div>
-
+          
         </div>
 
         <!-- Form Column -->
@@ -146,7 +146,7 @@
   </section>
 
   <section class="container py-5 pb-4 text-center">
-    <img src="{{ asset('assets/image/Mask group (1).png') }}" alt="Responsive image" class="img-fluid">
+    {{-- <img src="{{ asset('assets/image/Mask group (1).png') }}" alt="Responsive image" class="img-fluid"> --}}
   </section>
 
 

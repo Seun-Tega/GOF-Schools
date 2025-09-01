@@ -31,7 +31,7 @@
     <div class="container text-center">
       <h3 class="mb-3 text-center">Our Gallery</h3>
      <p class="event-text">
-  Welcome to the Gulf School Gallery — a vibrant collection of moments that capture the heart of our learning community. From classroom creativity and cultural celebrations to sports, science fairs, and everyday smiles, our gallery showcases the spirit, talent, and joy of our students and staff. Take a look and experience the GOF School difference through our lens.
+  Welcome to the GOF School Gallery — a vibrant collection of moments that capture the heart of our learning community. From classroom creativity and cultural celebrations to sports, science fairs, and everyday smiles, our gallery showcases the spirit, talent, and joy of our students and staff. Take a look and experience the GOF School difference through our lens.
 </p>
     </div>
   </section>
