@@ -33,11 +33,11 @@
                   target="_blank"
                   ><i class="bi bi-facebook"></i
                 ></a>
-                <a class="icon-social3 me-3 text-dark" href="#"
-                  ><i class="bi bi-twitter"></i
+                <a class="icon-social3 me-3 text-dark" href="https://youtube.com/@gofmyschool1986?si=ssn-s-A99T2Mz8fd"
+                  target="_blank" ><i class="bi bi-youtube"></i
                 ></a>
-                <a class="icon-social3 text-dark" href="#"
-                  ><i class="bi bi-linkedin"></i
+                <a class="icon-social3 text-dark" href="https://www.tiktok.com/@gofmyschool?_t=8oVd5aVqrm1&_r=1"
+                 target="_blank"  ><i class="bi bi-tiktok"></i
                 ></a>
               </div>
             </div>

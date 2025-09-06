@@ -75,9 +75,9 @@
 
           <div class="mt-4">
             <p><strong>Social Profile</strong></p>
-            <a href="https://youtube.com/@gofmyschool1986?si=ssn-s-A99T2Mz8fd"><i class="bi bi-youtube me-2 arrow3 btn btn-dark"></i></a>
-            <a href="https://www.tiktok.com/@gofmyschool?_t=8oVd5aVqrm1&_r=1"><i class="bi bi-tiktok me-2 btn btn-dark arrow3"></i></a>
-            <a href=""><i class="bi bi-linkedin btn btn-dark arrow3"></i></a>
+            <a href="https://youtube.com/@gofmyschool1986?si=ssn-s-A99T2Mz8fd"  target="_blank"><i class="bi bi-youtube me-2 arrow3 btn btn-dark"></i></a>
+            <a href="https://www.tiktok.com/@gofmyschool?_t=8oVd5aVqrm1&_r=1"  target="_blank"><i class="bi bi-tiktok me-2 btn btn-dark arrow3"></i></a>
+            <a href="https://www.facebook.com/share/17jfghH33v/" target="_blank"><i class="bi bi-facebook btn btn-dark arrow3"></i></a>
           </div>
           
         </div>

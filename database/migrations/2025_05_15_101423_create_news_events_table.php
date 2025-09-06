@@ -20,7 +20,7 @@ return new class extends Migration
             $table->date('event_date')->nullable()->index();
             $table->time('event_time')->nullable();
             $table->string('event_venue')->nullable();
-            $table->longText('news_content');  
+            $table->longText('news_content')->nullable();  
             $table->string('photo');
             $table->timestamps();
         });
