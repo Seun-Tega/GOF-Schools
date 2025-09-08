@@ -13,10 +13,10 @@
           <address class="mb-0">gofschooledu@gmail.com</address>
         </div>
 
-        <!-- Phone -->
+        {{-- <!-- Phone -->
         <div class="logo-section2">
           <p class="fw-bold mb-1 mb-sm-0">Phone</p>
           <p class="mb-0">+234 8081555652</p>
-        </div>
+        </div> --}}
       </div>
     </section>
